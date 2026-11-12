@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -649,11 +649,11 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_rawData: 568105584918845300
+      - m_rawData: 568105584918844230
       m_LastClickedID:
         m_rawData: 0
       m_ExpandedIDs:
-      - m_rawData: 568105589213709596
+      - m_rawData: 568105589213755984
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -785,7 +785,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -805,7 +805,18 @@ MonoBehaviour:
     m_SelectedIDs: []
     m_LastClickedID:
       m_rawData: 0
-    m_ExpandedIDs: []
+    m_ExpandedIDs:
+    - m_rawData: 0
+    - m_rawData: 568105584918845690
+    - m_rawData: 568105584918845692
+    - m_rawData: 568105584918845694
+    - m_rawData: 568105584918845696
+    - m_rawData: 568105584918845698
+    - m_rawData: 568105584918845700
+    - m_rawData: 568105584918845702
+    - m_rawData: 568105584918845704
+    - m_rawData: 568105584918845706
+    - m_rawData: 568105584918845708
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -835,12 +846,21 @@ MonoBehaviour:
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_rawData: 568105584918845300
+    - m_rawData: 568105584918844230
     m_LastClickedID:
-      m_rawData: 568105584918845300
+      m_rawData: 568105584918844230
     m_ExpandedIDs:
     - m_rawData: 0
-    - m_rawData: 568105584918847516
+    - m_rawData: 568105584918845690
+    - m_rawData: 568105584918845692
+    - m_rawData: 568105584918845694
+    - m_rawData: 568105584918845696
+    - m_rawData: 568105584918845698
+    - m_rawData: 568105584918845700
+    - m_rawData: 568105584918845702
+    - m_rawData: 568105584918845704
+    - m_rawData: 568105584918845706
+    - m_rawData: 568105584918845708
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -869,9 +889,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_rawData: 568105584918845300
+    - m_rawData: 568105584918844230
     m_LastClickedEntityId:
-      m_rawData: 568105584918845300
+      m_rawData: 568105584918844230
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
@@ -1306,7 +1326,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       displayed: 0
       id: XR Building Blocks
-      index: 13
+      index: 12
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
@@ -1363,7 +1383,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 591.1897, y: 326.62946, z: -299.16403}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1412,11 +1432,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
-    m_Value: {x: -0.13754213, y: -0.019011198, z: 0.0027097259, w: -0.990359}
+    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
     m_Target: 10
     speed: 2
-    m_Value: 388.93552
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2

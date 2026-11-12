@@ -1,0 +1,892 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.8f1 (5cb7df797b7d) revision 6076383'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'es' Physical Memory: 32119 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-foHZhP7RUbuaG3kfL0WQi" at "2026-11-11T00:23:11.1575996Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-11T00:23:11Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 17388, path: "F:/Program Files (x86)/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              b3c1e53aa6c84c1a84b07f8d817063a7
+  Correlation Id:          192c44d08fb4664d5db168e71d665a89
+  External correlation Id: 4728851038048217438
+  Machine Id:              DG2R7CRX4SKB38KfRPjmRFez9/c=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-foHZhP7RUbuaG3kfL0WQi" (connect: 0.00s, validation: 0.00s, handshake: 0.04s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-foHZhP7RUbuaG3kfL0WQi-notifications" at "2026-11-11T00:23:11.2027397Z"
+[Licensing::Module] Licensing Background thread has ended after 0.05s
+
+COMMAND LINE ARGUMENTS:
+F:\Unity\6000.5.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorkerHW5
+-projectPath
+F:/Git/VR-wea/VR-wea/VR-wea
+-logFile
+Logs/AssetImportWorkerHW5.log
+-srvPort
+55093
+-parentPid
+45048
+-analyticsCloudUserId
+4673758386530
+-analyticsCloudProjectId
+0818d2e5-76ba-4330-9a91-1fc295abdc16
+-analyticsLocalProjectId
+850c1e38315814049ba65e6d71416e32
+-editorAnalyticsEnabled
+1
+-cbmEditorLicense
+0c3b0ca84ace30afed0924391ef452c17693c7de
+-cbmMachineId
+DG2R7CRX4SKB38KfRPjmRFez9/c=
+-licensingIpc
+LicenseClient-foHZhP7RUbuaG3kfL0WQi
+-noDiagnosticSwitchPersistentStore
+-job-worker-count
+7
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+-force-d3d12
+-name
+AssetImport
+Successfully changed project path to: F:/Git/VR-wea/VR-wea/VR-wea
+F:/Git/VR-wea/VR-wea/VR-wea
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [45032]  Target information:
+
+Player connection [45032]  * "[IP] 192.168.1.33 [Port] 0 [Flags] 2 [Guid] 2529796274 [EditorId] 2529796274 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2MP57MA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [45032] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [45032] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 27.17 ms, found 10 plugins.
+Initialize engine version: 6000.5.8f1 (5cb7df797b7d)
+[Subsystems] Discovering subsystems at path F:/Unity/6000.5.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Git/VR-wea/VR-wea/VR-wea/Assets
+Forcing GfxDevice: Direct3D 12
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 2060 (ID=0x1e89)
+    Vendor:          NVIDIA
+    VRAM:            5945 MB
+    App VRAM Budget: 5177 MB
+    Driver:          32.0.16.1074
+Shader 'TextMeshPro/Distance Field SSD - SpaceWarp': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field - SpaceWarp': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Initialize mono
+Mono path[0] = 'F:/Unity/6000.5.8f1/Editor/Data/Managed'
+Mono path[1] = 'F:/Unity/6000.5.8f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'F:/Unity/6000.5.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/Unity/6000.5.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
+CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/Unity/6000.5.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: F:/Unity/6000.5.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673758386530-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: F:/Unity/6000.5.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.018119 seconds.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.818 seconds
+Domain Reload Profiling: 1806ms
+	BeginReloadAssembly (278ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (176ms)
+	LoadAllAssembliesAndSetupDomain (503ms)
+		LoadAssemblies (256ms)
+		AnalyzeDomain (360ms)
+			TypeCache.Refresh (357ms)
+				TypeCache.ScanAssembly (334ms)
+	FinalizeReload (820ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			BeforeProcessingInitializeOnLoad (138ms)
+			ProcessInitializeOnLoadAttributes (150ms)
+			ProcessInitializeOnLoadMethodAttributes (392ms)
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 20.72 ms, found 10 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 17.95 ms, found 10 plugins.
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Assertion failed on expression: '!AssetDatabase::IsAssetImportWorkerProcess()'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.GUID)
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.Object)
+UnityEditor.XR.OpenXR.Features.FeatureHelpersInternal:GetAllFeatureInfo (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:323)
+UnityEditor.XR.OpenXR.Features.FeatureHelpers:RefreshFeatures (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:30)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:AddOpenXRValidationRules () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:148)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:UpdateOpenXRProjectValidation () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:67)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:OpenXRProjectValidationCheck () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:43)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+[./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs line 323]
+
+Refresh completed but there are assets queued up for importing. Check for code that modifies assets which gets called after OnPostProcessAllAssets. Additional details in Log file
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.GUID)
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.Object)
+UnityEditor.XR.OpenXR.Features.FeatureHelpersInternal:GetAllFeatureInfo (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:323)
+UnityEditor.XR.OpenXR.Features.FeatureHelpers:RefreshFeatures (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:30)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:AddOpenXRValidationRules () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:148)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:UpdateOpenXRProjectValidation () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:67)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:OpenXRProjectValidationCheck () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:43)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+[./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs line 323]
+
+Assets queued for import after Refresh completed:
+	Assets/XR/Settings/OpenXRPackageSettings.asset
+Asset Pipeline Refresh (id=7c9b92718f63d834cbccd9c20941244a): Total: 0.001 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Assertion failed on expression: 'm_Ptr'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.GUID)
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.Object)
+UnityEditor.XR.OpenXR.Features.FeatureHelpersInternal:GetAllFeatureInfo (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:323)
+UnityEditor.XR.OpenXR.Features.FeatureHelpers:RefreshFeatures (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:30)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:AddOpenXRValidationRules () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:148)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:UpdateOpenXRProjectValidation () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:67)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:OpenXRProjectValidationCheck () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:43)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+[./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs line 323]
+
+Assertion failed on expression: '!AssetDatabase::IsAssetImportWorkerProcess()'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.GUID)
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.Object)
+UnityEditor.XR.OpenXR.Features.FeatureHelpersInternal:GetAllFeatureInfo (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:323)
+UnityEditor.XR.OpenXR.Features.FeatureHelpers:RefreshFeatures (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:30)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:AddOpenXRValidationRules () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:148)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:UpdateOpenXRProjectValidation () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:67)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:OpenXRProjectValidationCheck () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:43)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+[./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs line 323]
+
+Refresh completed but there are assets queued up for importing. Check for code that modifies assets which gets called after OnPostProcessAllAssets. Additional details in Log file
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.GUID)
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.Object)
+UnityEditor.XR.OpenXR.Features.FeatureHelpersInternal:GetAllFeatureInfo (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:323)
+UnityEditor.XR.OpenXR.Features.FeatureHelpers:RefreshFeatures (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:30)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:AddOpenXRValidationRules () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:148)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:UpdateOpenXRProjectValidation () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:67)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:OpenXRProjectValidationCheck () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:43)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+[./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs line 323]
+
+Assets queued for import after Refresh completed:
+	Assets/XR/Settings/OpenXRPackageSettings.asset
+Asset Pipeline Refresh (id=be5322916d3946d4695464f8e0a3dc18): Total: 0.001 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Assertion failed on expression: 'm_Ptr'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.GUID)
+UnityEditor.AssetDatabase:SaveAssetIfDirty (UnityEngine.Object)
+UnityEditor.XR.OpenXR.Features.FeatureHelpersInternal:GetAllFeatureInfo (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:323)
+UnityEditor.XR.OpenXR.Features.FeatureHelpers:RefreshFeatures (UnityEditor.BuildTargetGroup) (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs:30)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:AddOpenXRValidationRules () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:148)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:UpdateOpenXRProjectValidation () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:67)
+UnityEditor.XR.OpenXR.OpenXRProjectValidationRulesSetup:OpenXRProjectValidationCheck () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/OpenXRProjectValidationRulesSetup.cs:43)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+[./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Editor/FeatureSupport/FeatureHelpers.cs line 323]
+
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.435 seconds
+Domain Reload Profiling: 3535ms
+	BeginReloadAssembly (402ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (11ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (192ms)
+	LoadAllAssembliesAndSetupDomain (1469ms)
+		LoadAssemblies (961ms)
+		AnalyzeDomain (440ms)
+			TypeCache.Refresh (326ms)
+				TypeCache.ScanAssembly (295ms)
+			BuildScriptInfoCaches (102ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1437ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (446ms)
+			ProcessInitializeOnLoadMethodAttributes (379ms)
+			AfterProcessingInitializeOnLoad (35ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+AcceleratorClientConnectionCallback - disconnected - :0
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 19.99 ms, found 10 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Curl error 3: URL rejected: Malformed input to a URL function
+Unloading 7772 unused Assets / (7.2 MB). Loaded Objects now: 8796.
+Memory consumption went from 355.0 MB to 347.8 MB.
+Total: 23.044100 ms (FindLiveObjects: 2.300400 ms CreateObjectMapping: 4.362900 ms MarkObjects: 9.273300 ms  DeleteObjects: 7.103400 ms)
+
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:20.2720718Z
+  Time since last request: 687309.42482600000221 seconds.
+  importAddress: GUID: e053b8fbc416ba349b4a58a26410bba2 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Models/Pinch_Pointer_LOD0.fbx - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e053b8fbc416ba349b4a58a26410bba2 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Models/Pinch_Pointer_LOD0.fbx - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e053b8fbc416ba349b4a58a26410bba2' -> (Import Result ID: '153719fc9bb02bf6c73dfe958a20bd09') in 0.182 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b8b3ea017bc61e668cddcf369b2eb69 DependenciesID=11c55dea09072c6357655a9072669be3 StaticDependenciesID=c56d120378b1422b564dbd76851a831b 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:20.4702781Z
+  Time since last request: 0.0001869 seconds.
+  importAddress: GUID: e766f86cb7d2461683eb37d8a971fb14 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Scripts/ClimbTeleportDestinationIndicator.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e766f86cb7d2461683eb37d8a971fb14 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Scripts/ClimbTeleportDestinationIndicator.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e766f86cb7d2461683eb37d8a971fb14' -> (Import Result ID: '337529f2c194098c720738f3ddd3a9b4') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3381047d2116ae438423542d4580bf65 DependenciesID=fe4ae2fa7b3885b072088b619c539804 StaticDependenciesID=60ddaf10d917709c5a8149e608c95461 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:20.4896938Z
+  Time since last request: 0.0003975 seconds.
+  importAddress: GUID: 6ac303adce39adb499d7f5c90a77c1c1 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Interactables - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 6ac303adce39adb499d7f5c90a77c1c1 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Interactables - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 6ac303adce39adb499d7f5c90a77c1c1' -> (Import Result ID: '74576fcedb268a98d5b1ea510cece73c') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c16ff75a004d1c8ebb89b170cf7e6c35 DependenciesID=832873f5de18168b09671d7c3bccfdcb StaticDependenciesID=78d0d009e078db770eed1d9024bae6e8 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:20.5109401Z
+  Time since last request: 0.0003558 seconds.
+  importAddress: GUID: 9f3369e30fbd31f4bb596b1a99babe83 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Controllers/XR Controller Right.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 9f3369e30fbd31f4bb596b1a99babe83 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Controllers/XR Controller Right.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 9f3369e30fbd31f4bb596b1a99babe83' -> (Import Result ID: 'd119b223436aa711721ab6e54e84fe79') in 0.267 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=10e839678a4debb24faf7ea85e4f8893 DependenciesID=7b81b672e62bda9a9abc6363c48bce0f StaticDependenciesID=c27f646213a566aec7bc7db8a5c5220c 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 59
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:20.7916102Z
+  Time since last request: 0.0000282 seconds.
+  importAddress: GUID: 6f3d696f7c3365846b6dc2402afb3d3e - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Materials/UI-NoZTest.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 6f3d696f7c3365846b6dc2402afb3d3e - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Materials/UI-NoZTest.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 6f3d696f7c3365846b6dc2402afb3d3e' -> (Import Result ID: '7c72bb8966a06b260c15ff9011c48292') in 0.032 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4109b6294327ee5559357b9f0088b382 DependenciesID=75af78395fe324f54828fbc329f3d242 StaticDependenciesID=d38c8e826b11b740a108a21aa4d2333a 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:20.8381499Z
+  Time since last request: 0.0000486 seconds.
+  importAddress: GUID: 0a35b7e20f75a8540a2c14b9555078cb - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/TunnelingVignette/TunnelingVignette.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 0a35b7e20f75a8540a2c14b9555078cb - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/TunnelingVignette/TunnelingVignette.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 0a35b7e20f75a8540a2c14b9555078cb' -> (Import Result ID: '4dabd4a947d4b15a94e95948b03047e2') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=611cdf8ede2797276b8b77ccfc3b73f6 DependenciesID=f07436d3dcef23db7a62731f14ed823e StaticDependenciesID=d573466a62b71f6354805b96bf67bf8a 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:20.8603095Z
+  Time since last request: 0.0003207 seconds.
+  importAddress: GUID: 3df3e1220f2164f448701a6de8084f92 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Interactors/Left_NearFarInteractor.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3df3e1220f2164f448701a6de8084f92 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Interactors/Left_NearFarInteractor.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3df3e1220f2164f448701a6de8084f92' -> (Import Result ID: '23af2fcd3d7085d7c782af0d225eee5b') in 0.098 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=22d8fc520861167266ab072ad7d72d0b DependenciesID=26808045809d599aaaabe3679a2af986 StaticDependenciesID=d85fa424082d9f3891a955b13b8399b6 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:20.9705383Z
+  Time since last request: 0.00004 seconds.
+  importAddress: GUID: 27024f5809f4a4347b9cd7f26a1bdf93 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Interactors/Poke Interactor.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 27024f5809f4a4347b9cd7f26a1bdf93 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Interactors/Poke Interactor.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 27024f5809f4a4347b9cd7f26a1bdf93' -> (Import Result ID: '9716c921d4aa5aa54672b6c40989b314') in 0.021 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c637fbc45131d15cf04ade3a07c71432 DependenciesID=e8e15d413d9b0812de3211294a84c8fc StaticDependenciesID=35260413e4162707d1043ef8ecc49ae3 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.0069796Z
+  Time since last request: 0.0001632 seconds.
+  importAddress: GUID: 07b3638c2f5db5b479ff24c2859713d4 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Scripts/XRPokeFollowAffordance.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 07b3638c2f5db5b479ff24c2859713d4 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Scripts/XRPokeFollowAffordance.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 07b3638c2f5db5b479ff24c2859713d4' -> (Import Result ID: 'ca4912dcc9fde6f9ddfc9e243ff05d03') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=46f4e0bc090eacd3d5953fa8e5925fb1 DependenciesID=00cc7bf9576391007217961a3ebb8095 StaticDependenciesID=6df6196ae6f29a50c9e87a8bdcd4e51e 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.0263225Z
+  Time since last request: 0.0002654 seconds.
+  importAddress: GUID: 5d3a60dbf2f04694f9060712df89debb - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Presets/XRI Default Snap Turn.preset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 5d3a60dbf2f04694f9060712df89debb - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Presets/XRI Default Snap Turn.preset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 5d3a60dbf2f04694f9060712df89debb' -> (Import Result ID: 'ddc29fa6eb4c9852c0c25cf3c3cb78b8') in 0.019 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5aff6ccf769349a81ce51e5209f22e97 DependenciesID=daefeb83fb3eb8842c3abca83d5b701a StaticDependenciesID=10c8fcdbbcf49b4d06b97e9d9a68dc10 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.057649Z
+  Time since last request: 0.0003116 seconds.
+  importAddress: GUID: 55f7614a1d331d14bb631965514937d8 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Presets/XRI Default Right Controller InputActionManager.preset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 55f7614a1d331d14bb631965514937d8 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Presets/XRI Default Right Controller InputActionManager.preset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 55f7614a1d331d14bb631965514937d8' -> (Import Result ID: '8235d78e0f107ef7d1e9c44fbd6231bc') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bf153406518aae91021390c5e4677524 DependenciesID=3eda3577a16a75f927c9faba07dce2a8 StaticDependenciesID=1f5a1de78bfc3d71301a88c7c3debc61 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.081965Z
+  Time since last request: 0.0003403 seconds.
+  importAddress: GUID: e05cd47ab8981f64badd3bfe29af8f4e - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Gaze Interactables.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e05cd47ab8981f64badd3bfe29af8f4e - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Gaze Interactables.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e05cd47ab8981f64badd3bfe29af8f4e' -> (Import Result ID: '67514124bdc2b9b18c04f442c1be7f9c') in 0.026 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0cb37a1a0af8c5b74e5108ecaa00705d DependenciesID=45545e7d4fa84bfff0cb6b6036ea4573 StaticDependenciesID=d3c8263362b48bf2b138e74b37d3f92e 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.1214898Z
+  Time since last request: 0.0000315 seconds.
+  importAddress: GUID: 3549fdaf258e11846b85a316c16c699c - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Interactables/Blaser.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3549fdaf258e11846b85a316c16c699c - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Interactables/Blaser.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3549fdaf258e11846b85a316c16c699c' -> (Import Result ID: '6475c0e56bbc1db109f33b29ade85ec9') in 0.055 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1c3b392765ee284badd67e6bd52da8c0 DependenciesID=c3329b5798ff08211321d01c48d78f30 StaticDependenciesID=912dcb9889c00b446c558aa13a68b6c3 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.2855865Z
+  Time since last request: 0.0937977 seconds.
+  importAddress: GUID: 0cbc0856f0fb8d84a81be5dea463c369 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/UI/Scroll UI Sample.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 0cbc0856f0fb8d84a81be5dea463c369 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/UI/Scroll UI Sample.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 0cbc0856f0fb8d84a81be5dea463c369' -> (Import Result ID: '9a5abd67c070689ecb97a3bd9f3f4c49') in 0.062 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2084047a3967af2a638001907fab98e5 DependenciesID=6973e9c94ded02e43f2136e3ea6063ef StaticDependenciesID=5e3c2c9676b41ca978cd67795e483999 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 80
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.3581458Z
+  Time since last request: 0.0000358 seconds.
+  importAddress: GUID: ad818c36731146e994540a1896ad8f24 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: ad818c36731146e994540a1896ad8f24 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: ad818c36731146e994540a1896ad8f24' -> (Import Result ID: '48c88dc5cbb4a255083e128232a26a73') in 0.101 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=550ecf8f95a82b95fbfeaeb97fd5bb48 DependenciesID=4a95e83df96b05a2a559c0410ef178b0 StaticDependenciesID=143934f8cb0b7d8ecb54be202f334f81 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.4743964Z
+  Time since last request: 0.0006853 seconds.
+  importAddress: GUID: 5a327724a94a9674a8a93e6b4e9a6eee - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Textures/Concrete_Albedo.tif - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 5a327724a94a9674a8a93e6b4e9a6eee - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Textures/Concrete_Albedo.tif - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 5a327724a94a9674a8a93e6b4e9a6eee' -> (Import Result ID: 'f87a1e814cae7a241c0f7fe655d3df70') in 0.053 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6b961d3a2da59f2c8f9c743e4a62f3d5 DependenciesID=9492ab6c04486f820e9d1bd53b64ba0f StaticDependenciesID=26fb93b18a69b7393f38671c590385ff 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.5407632Z
+  Time since last request: 0.0005573 seconds.
+  importAddress: GUID: 9233538b711383d449a485633568d17c - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Editor/StarterAssets.Editor.asmdef - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 9233538b711383d449a485633568d17c - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Editor/StarterAssets.Editor.asmdef - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 9233538b711383d449a485633568d17c' -> (Import Result ID: '3659fd5c1dc828bb53a5ba4f98014a35') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2b7735cf381e44b6965655befea32dca DependenciesID=710ed355952cb5f14e9b4c50a3b415f1 StaticDependenciesID=0698c23b3104a87872d7c7d7c5aa2cdf 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.5619767Z
+  Time since last request: 0.0004397 seconds.
+  importAddress: GUID: cb280e627cedda749b93045b8dd8d327 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Scripts/ToggleColorToggler.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: cb280e627cedda749b93045b8dd8d327 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Scripts/ToggleColorToggler.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: cb280e627cedda749b93045b8dd8d327' -> (Import Result ID: '1462fc043c11443d5d929fbc116e9e8d') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fcbcfac72aa52c3621c8cda1b6755b76 DependenciesID=dd03a55099ff17bf6bee5e0333951f36 StaticDependenciesID=679971e6f5746ac3fe27396b0a0cd162 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.5838561Z
+  Time since last request: 0.0002716 seconds.
+  importAddress: GUID: c2712227db89c5142adad58b143bf039 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/AffordanceThemes/PokeSphereInteraction.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: c2712227db89c5142adad58b143bf039 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/AffordanceThemes/PokeSphereInteraction.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: c2712227db89c5142adad58b143bf039' -> (Import Result ID: '93acc716a791004dce140c81f09ffe9a') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5fa04b26b5bd3e77187604558ddac37a DependenciesID=ee454718b1d33707169ed236be559bb7 StaticDependenciesID=585aaf259f51619895ab355ae011ea86 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.6076448Z
+  Time since last request: 0.0003094 seconds.
+  importAddress: GUID: fd28f23af44f73f4a95e33435872ad15 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/UI Sample.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: fd28f23af44f73f4a95e33435872ad15 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/UI Sample.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: fd28f23af44f73f4a95e33435872ad15' -> (Import Result ID: 'a968e1fb02eeda1a74945085e51ae1fc') in 0.070 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=add9e0018a737b48c304009d6de38258 DependenciesID=aea60908f5a0b3a7698a51319b70327d StaticDependenciesID=48d1d0d70d1a7a433fc2f5a2be72342d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 317
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.6894995Z
+  Time since last request: 0.0000237 seconds.
+  importAddress: GUID: e71c638c311acc546a63dbfa61f89ab6 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Teleport - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e71c638c311acc546a63dbfa61f89ab6 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Prefabs/Teleport - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e71c638c311acc546a63dbfa61f89ab6' -> (Import Result ID: 'ebca26da2ccf8d789752024da670f67b') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=91ec5c09e9cdbb765a23208bccbae1a4 DependenciesID=4610b304e537b98958329df029bd8caa StaticDependenciesID=3250361effb933994198176bf2f3ed03 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.7091391Z
+  Time since last request: 0.0003221 seconds.
+  importAddress: GUID: 521327bdbcb341f782d36f02cab76cb0 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Interactables/Torus.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 521327bdbcb341f782d36f02cab76cb0 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Interactables/Torus.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 521327bdbcb341f782d36f02cab76cb0' -> (Import Result ID: '7507d3e90d42dcb3d2593ba4ac52bcea') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=469bebd07b9352d942dfdad5ecacfde7 DependenciesID=6c8a3dba1bb00a1ba1f40a5869412e5d StaticDependenciesID=89d37eebc5eb985d8862d1d320dc1205 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.741482Z
+  Time since last request: 0.0000257 seconds.
+  importAddress: GUID: 27c5945ad36f6f147bc402250679a228 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Presets/XRI Default Continuous Move.preset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 27c5945ad36f6f147bc402250679a228 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/Presets/XRI Default Continuous Move.preset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 27c5945ad36f6f147bc402250679a228' -> (Import Result ID: '92abe01a051df0154c5df872d4c21351') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b1c5207f27d170be1672065006ccbf9f DependenciesID=034c32b8d30ef939f992595624eaa93a StaticDependenciesID=8eef37be8582fe8d6dadf634670363a6 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.7685083Z
+  Time since last request: 0.0004539 seconds.
+  importAddress: GUID: b3830b3b2f190ee46a9c88433e985221 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Climb/Ladder.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: b3830b3b2f190ee46a9c88433e985221 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/Starter Assets/DemoAssets/Prefabs/Climb/Ladder.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: b3830b3b2f190ee46a9c88433e985221' -> (Import Result ID: 'acbc2e332c3ca6d5b9e777ae73098752') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8d627e6a28e29480ff4d7221ef40f82e DependenciesID=f4532999c0d05fe9eb43ab44cdd4d5ae StaticDependenciesID=c1ebfc1e15e8e0cf94ebf299502062fa 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 141
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.8464436Z
+  Time since last request: 0.0494383 seconds.
+  importAddress: GUID: e6eb07daf4cc52449a15922f0b93851d - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Highlight/RoundedHighlight.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e6eb07daf4cc52449a15922f0b93851d - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Highlight/RoundedHighlight.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e6eb07daf4cc52449a15922f0b93851d' -> (Import Result ID: '5b12770830a3941725c7cc9e04dd7031') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4cdf7fb2769bd33efbe422450034dda0 DependenciesID=b07e9d3a93dcd64bca63f27ba842838a StaticDependenciesID=f73a85f15a2f9c92f5bfa77ab8d9c477 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.876547Z
+  Time since last request: 0.0004598 seconds.
+  importAddress: GUID: e0fd4b1a727e94e57832e369a6bcaebd - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Translate/TranslateDown.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e0fd4b1a727e94e57832e369a6bcaebd - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Translate/TranslateDown.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e0fd4b1a727e94e57832e369a6bcaebd' -> (Import Result ID: '6bf032b9a33f78dfa47d0556201c3544') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=caf9935b93f845e552d9ab75f930f162 DependenciesID=d527e2a3084b6f03e4d0a96ff44e4c12 StaticDependenciesID=1dc3808f50fee8e80696eca360be6d81 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.9045639Z
+  Time since last request: 0.0004252 seconds.
+  importAddress: GUID: b8da6254ca32341d6b80019659732616 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Expressions/Thumb Expression Capture.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: b8da6254ca32341d6b80019659732616 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Expressions/Thumb Expression Capture.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: b8da6254ca32341d6b80019659732616' -> (Import Result ID: '0fe8b64f7f02783e938af1ff9421b58e') in 0.011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1a3f21c10375a3d0b7bfc4d9b52a0de5 DependenciesID=146baca1b90bdceb4cc2f308d725946e StaticDependenciesID=da8d1e837a20b07a823bc723ab494ef6 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.9271837Z
+  Time since last request: 0.0003857 seconds.
+  importAddress: GUID: e7433d84ae5734165bb783756d919d02 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/InteractionSimulator.asmdef - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e7433d84ae5734165bb783756d919d02 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/InteractionSimulator.asmdef - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e7433d84ae5734165bb783756d919d02' -> (Import Result ID: 'fcaf4f42e6e659cd11876e43a6e0a1b9') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=faddeff5833d75577c010467f76da934 DependenciesID=d515a859c26fdcf4e1414006f161b6cd StaticDependenciesID=25da902044830a0f7dcc7d2eaa21957f 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:21.9492175Z
+  Time since last request: 0.0003703 seconds.
+  importAddress: GUID: 6df5845b904624b8f8a3b140002a522f - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Recordings/poke.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 6df5845b904624b8f8a3b140002a522f - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Recordings/poke.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 6df5845b904624b8f8a3b140002a522f' -> (Import Result ID: '86693fdeae0e40f4b9cb9e079860c888') in 0.301 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=64393bab64371a8e5752aec85de3ae01 DependenciesID=8ec8343869812c187f5f5d7b8655043c StaticDependenciesID=2d68ffc326f1c7e08ea260e3a719ea12 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.3500876Z
+  Time since last request: 0.0000697 seconds.
+  importAddress: GUID: d88f975fd5f5e4ed6a56998765d40b4c - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Expressions - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: d88f975fd5f5e4ed6a56998765d40b4c - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Expressions - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: d88f975fd5f5e4ed6a56998765d40b4c' -> (Import Result ID: '86d2c93cacf519573b92303a3bd6de4a') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=078accae04d83b39245a3e024273ce21 DependenciesID=52513786165a1eec064ebb89ab716846 StaticDependenciesID=ca7bcb2ffba2eaf1b81a57192e372a93 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.3711209Z
+  Time since last request: 0.0006773 seconds.
+  importAddress: GUID: 5ed5147a74bd9473984d8eeaecd8b93c - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Headset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 5ed5147a74bd9473984d8eeaecd8b93c - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Headset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 5ed5147a74bd9473984d8eeaecd8b93c' -> (Import Result ID: '26711be2d50f12c3443ec4df99fb3f54') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=65eda3eb01bc4e0550d62160c964dd5a DependenciesID=8654cb1da1b5df019f75ffbf976b2fc4 StaticDependenciesID=d227308374c2906136b84ecb21f67ce6 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.3932942Z
+  Time since last request: 0.0004957 seconds.
+  importAddress: GUID: 1c4801afda4ca1740b5d7426f4b43c8a - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Cursors/HeadsetCursor_mac_32.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 1c4801afda4ca1740b5d7426f4b43c8a - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Cursors/HeadsetCursor_mac_32.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 1c4801afda4ca1740b5d7426f4b43c8a' -> (Import Result ID: '5cd9124a3414292e3bb2626696f05a0c') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=00b6589dae02b63e4cb39bb564e76beb DependenciesID=50fbf781e66b1c2a0bcbab3ac4e7ab18 StaticDependenciesID=5ea352727718cb87a5bc94beb68fffa4 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.4231066Z
+  Time since last request: 0.0004584 seconds.
+  importAddress: GUID: 7bccab66a397c492c93ab84fb87d8fcb - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Translate/TranslateLeft@2x.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 7bccab66a397c492c93ab84fb87d8fcb - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Translate/TranslateLeft@2x.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 7bccab66a397c492c93ab84fb87d8fcb' -> (Import Result ID: '3a9ba18d59001408139d37163ee1ebdb') in 0.019 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6598621fbc9951b53108a6df60590746 DependenciesID=d22602e10b45e87ed1a97009d073af28 StaticDependenciesID=4e7ae171d77e15cf169868d9b82b9008 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.4566154Z
+  Time since last request: 0.0003573 seconds.
+  importAddress: GUID: 8158670b4655740c88859b4e3d283bf3 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Cursors/RightHand_mac32.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 8158670b4655740c88859b4e3d283bf3 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Cursors/RightHand_mac32.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 8158670b4655740c88859b4e3d283bf3' -> (Import Result ID: '9fea12bde940d256e091d50ffca51c66') in 0.011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b6a8bc84d44bbb5b642be55359aebd86 DependenciesID=bbc09e59c40eb76529b2707b1c8bd41d StaticDependenciesID=385d086e61162263742c7ba83feb7696 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.4839357Z
+  Time since last request: 0.000673 seconds.
+  importAddress: GUID: 45cf9a9247ff14898b4edee9ea72ebf2 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Rotate/RotateUpArrow.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 45cf9a9247ff14898b4edee9ea72ebf2 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Rotate/RotateUpArrow.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 45cf9a9247ff14898b4edee9ea72ebf2' -> (Import Result ID: 'c0953a240a711ffe23fd4d59d063586d') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b9a7b82e6061ad6b34f40f959a58bc34 DependenciesID=83e1ce6ab35d856c7777075ab9141c7f StaticDependenciesID=526cc8475d319be3af78639fdc6089b9 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.5121954Z
+  Time since last request: 0.0007359 seconds.
+  importAddress: GUID: 51dbca003875e4a13a6aa29047489e85 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Hands/Hands.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 51dbca003875e4a13a6aa29047489e85 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Hands/Hands.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 51dbca003875e4a13a6aa29047489e85' -> (Import Result ID: 'fd4ac8550bbb9148ef5b3869529d42b3') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fb898756f09866851c89b7fce50eaa57 DependenciesID=5daf601c31acba3bb1468e59d10a9fad StaticDependenciesID=079e53f0659e10f7be18cf585519ac4d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.5408757Z
+  Time since last request: 0.0004069 seconds.
+  importAddress: GUID: f7d568d8f39f848d29ec33b62b8bf753 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Hands/RightHand.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f7d568d8f39f848d29ec33b62b8bf753 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Hands/RightHand.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f7d568d8f39f848d29ec33b62b8bf753' -> (Import Result ID: '49709e66e2d91cb7ec989db77eb140c7') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ac1b9684b1245d591664f0b5a49290cd DependenciesID=94981d9724d308617423973fc61d61a9 StaticDependenciesID=fd7f52ff0476666c11a18ea47b181ccb 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.5692704Z
+  Time since last request: 0.0004716 seconds.
+  importAddress: GUID: 2f2b52788ce4b4a84b1daf8e3e04dcd7 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Modes - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 2f2b52788ce4b4a84b1daf8e3e04dcd7 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Modes - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 2f2b52788ce4b4a84b1daf8e3e04dcd7' -> (Import Result ID: 'da01cc6a9f9147c1c19c061dc40f9dd6') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3f5d7dc0e87bcd803edbba4a41d4cfee DependenciesID=4f3cc30a36b19db99e649a4a7d0b8aa1 StaticDependenciesID=f91d3e8b77e4e45303c556e3545fd1c4 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.5910497Z
+  Time since last request: 0.0004758 seconds.
+  importAddress: GUID: f4b9da94370444448aa6dcb1598d0dae - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f4b9da94370444448aa6dcb1598d0dae - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f4b9da94370444448aa6dcb1598d0dae' -> (Import Result ID: '54c1d58a4a9ee0e05994c8f64bbf2620') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a7c9c136cf87f78b33aa9a6956a7254e DependenciesID=8da13241e287ab3dfdff1617dea2dc3d StaticDependenciesID=5de15561f585f4337d7655797af06fe8 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.6147276Z
+  Time since last request: 0.0004496 seconds.
+  importAddress: GUID: 73664a8cfa3874f65a8017811e725b7a - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Cursors/LeftHand_win64.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 73664a8cfa3874f65a8017811e725b7a - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Cursors/LeftHand_win64.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 73664a8cfa3874f65a8017811e725b7a' -> (Import Result ID: 'ababcc4580c52f2a0f4ecce45ac3c7c4') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fe11db2f5078a4fad364c80babc57334 DependenciesID=ddcbe03b2871e124d35d21cedc8655db StaticDependenciesID=f30156fc28dffc6d09325d3110afd00c 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:22.6418865Z
+  Time since last request: 0.0004317 seconds.
+  importAddress: GUID: c2bc09e4357ee4c6bbb9d0e8ccf7f21d - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Controller/LeftController.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: c2bc09e4357ee4c6bbb9d0e8ccf7f21d - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Controller/LeftController.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: c2bc09e4357ee4c6bbb9d0e8ccf7f21d' -> (Import Result ID: 'c5ee0307936e88d963f52c3ad99d9103') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2ee950baaf262089387b98ee39ef1165 DependenciesID=6e3cb5fb6f8b50b3aa6ec6635b808231 StaticDependenciesID=67e4adcac7f469ead08139cfabcb9125 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.0011744Z
+  Time since last request: 0.3293387 seconds.
+  importAddress: GUID: e73a58f6e2794ae7b1b7e50b7fb811b0 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e73a58f6e2794ae7b1b7e50b7fb811b0 - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e73a58f6e2794ae7b1b7e50b7fb811b0' -> (Import Result ID: '29884d4c6f8805f4a15c1cc7ad2cd95d') in 0.024 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4d799f3a736b161fce427a2077dc1ab2 DependenciesID=b8b63b6bd16ce2f926227bce098d5483 StaticDependenciesID=a3e34b18c6241ca1e95e2faef03d9855 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.0385632Z
+  Time since last request: 0.0005883 seconds.
+  importAddress: GUID: bc1ede39bf3643ee8e493720e4259791 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: bc1ede39bf3643ee8e493720e4259791 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: bc1ede39bf3643ee8e493720e4259791' -> (Import Result ID: '8ef305a98238c2abccfe065853a83f65') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c189b7c5d20312b8b293ba8475821c1c DependenciesID=a0549cfa4ebb23152b1b97a65ed4fde0 StaticDependenciesID=c5cbba0447380ea4bdc31ef4cacd2ccf 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.0686511Z
+  Time since last request: 0.0004301 seconds.
+  importAddress: GUID: 46c27b4ffbe1f4c92b44af023b7ee228 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Translate/TranslateUp.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 46c27b4ffbe1f4c92b44af023b7ee228 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Translate/TranslateUp.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 46c27b4ffbe1f4c92b44af023b7ee228' -> (Import Result ID: 'f2fc91dd621db60249fbb139b520fb50') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9e4f65fff0a2efecafbe136ab96e851e DependenciesID=5fcf8e017a728b253de4160cbf591038 StaticDependenciesID=3118ec0c2ee1080b502ea8c08829431d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.0925464Z
+  Time since last request: 0.0002616 seconds.
+  importAddress: GUID: f4ae9f38f5d3b410f84c02c1486c64eb - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Hands/Hand_Left.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f4ae9f38f5d3b410f84c02c1486c64eb - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Hands/Hand_Left.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f4ae9f38f5d3b410f84c02c1486c64eb' -> (Import Result ID: 'b50d630af3f493bac522b9ecb350bca7') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1c8c3da0ced50a8bff00669b2dad1ca4 DependenciesID=173f75bf14dedc0c8d7cd3dbcd08ef2a StaticDependenciesID=701ac61ca4b58d1d6e8568c92ba0b84a 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.119828Z
+  Time since last request: 0.0004151 seconds.
+  importAddress: GUID: 3a2050912ec71479899c69612c0af028 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Expressions/Resting Expression Capture.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3a2050912ec71479899c69612c0af028 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Expressions/Resting Expression Capture.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3a2050912ec71479899c69612c0af028' -> (Import Result ID: 'ba7b7b6daea8cf1d398696cbbeea0519') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=76df50ca3ded388110423c0b21dfe834 DependenciesID=887e017a6f2e4b1944e07f90a3fd51e2 StaticDependenciesID=5130b52e70d648a642a502129a6ee3ba 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.140872Z
+  Time since last request: 0.0005054 seconds.
+  importAddress: GUID: a02a7d8c237544f1962732b55a9aebf1 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: a02a7d8c237544f1962732b55a9aebf1 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: a02a7d8c237544f1962732b55a9aebf1' -> (Import Result ID: '37f8acc2fba136f45b7c3c42e74312d5') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0e64514b4254829ad4f8cb628f8defb1 DependenciesID=52a526ad462bef825a9489dc7817df08 StaticDependenciesID=cf677355c287aa6991777011f3ec0e03 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.1664538Z
+  Time since last request: 0.000366 seconds.
+  importAddress: GUID: 4aecb92fff08436c8303b10eab8da368 - Path: Assets/TextMesh Pro/Resources/Style Sheets - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 4aecb92fff08436c8303b10eab8da368 - Path: Assets/TextMesh Pro/Resources/Style Sheets - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 4aecb92fff08436c8303b10eab8da368' -> (Import Result ID: '765ca8b04a3c25334b4a95835a44ec65') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0f5c8d384dc26c32cd2449aeb276a171 DependenciesID=f2c33e89ace1a3a943b2af0e867a57ba StaticDependenciesID=82fff376c297d8b864b360d20a07e963 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.1862062Z
+  Time since last request: 0.0005929 seconds.
+  importAddress: GUID: db211eab80abe447b865ccff41592e0e - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Rotate/BackRotate@2x.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: db211eab80abe447b865ccff41592e0e - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Rotate/BackRotate@2x.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: db211eab80abe447b865ccff41592e0e' -> (Import Result ID: '24eed70fd18131238bd1cc8529315b8b') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7907df5aa46e1e9a463f3b358b3794b4 DependenciesID=b7e4c76c05fa2b37c1b85f0b04df9fb8 StaticDependenciesID=c8bbded086b4562b5ca7bd5c0b93c3ef 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.2115446Z
+  Time since last request: 0.0003001 seconds.
+  importAddress: GUID: 0178fcb869bafef4690d177d31d17db8 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 0178fcb869bafef4690d177d31d17db8 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 0178fcb869bafef4690d177d31d17db8' -> (Import Result ID: 'cfe9def0cf75f511c0e96850c4d6627e') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=46b4e09af0efe8c7d79f4a3ebbf16f43 DependenciesID=fb45ac04603a805078ed57c39b864075 StaticDependenciesID=dc1b2602a5ab73d250b979bdbb3bf6ff 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.2341996Z
+  Time since last request: 0.0003795 seconds.
+  importAddress: GUID: fa004868963da45f6a2e6520cfd82522 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Expressions/Fist Expression Capture.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: fa004868963da45f6a2e6520cfd82522 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/Hand Expressions/Fist Expression Capture.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: fa004868963da45f6a2e6520cfd82522' -> (Import Result ID: '1af280d11c04817e441be989597be6c1') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b11b202cdac8b8a45eab37b95dd03c49 DependenciesID=2a89c7e44a33af014a637eaa5f57ad22 StaticDependenciesID=65d33d4e8894a0bba3a4f26cf6e92667 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.2568843Z
+  Time since last request: 0.0004531 seconds.
+  importAddress: GUID: 1e3b057af24249748ff873be7fafee47 - Path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 1e3b057af24249748ff873be7fafee47 - Path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 1e3b057af24249748ff873be7fafee47' -> (Import Result ID: 'e90701f2fe4274bb999f4999db185e7d') in 0.011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=83e6650c354b01a139c1f759ec8b8770 DependenciesID=c91e467fd2dd38c4de7a43289e51a7d1 StaticDependenciesID=5dc6991abef7e504e7a1c5c157347142 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.2835526Z
+  Time since last request: 0.0005574 seconds.
+  importAddress: GUID: dd89cf5b9246416f84610a006f916af7 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: dd89cf5b9246416f84610a006f916af7 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: dd89cf5b9246416f84610a006f916af7' -> (Import Result ID: '475dc469e8d54157a6914f1b17c3da2b') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e166cc57dfdc6b16a3b3f79e73e5dee7 DependenciesID=334e9cfb93f834cefe5af5f807501178 StaticDependenciesID=ac3bb52e348d9e64c14909744ec41ec9 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.3069937Z
+  Time since last request: 0.0004054 seconds.
+  importAddress: GUID: 1f7ec93f6b8c84f5981db5008b5859cd - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/XR Interaction Hand Controls.inputactions - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 1f7ec93f6b8c84f5981db5008b5859cd - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/XR Interaction Hand Controls.inputactions - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 1f7ec93f6b8c84f5981db5008b5859cd' -> (Import Result ID: 'e5bf8d4f82473ec708839e04c7da4324') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b862388dadea5d763f24ae7b2b0989b3 DependenciesID=96def1eed43a6233a01341c81e930edb StaticDependenciesID=b6c3c4999e64b9c4fd892884e105a668 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.3377453Z
+  Time since last request: 0.0002409 seconds.
+  importAddress: GUID: 8f586378b4e144a9851e7b34d9b748ee - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 8f586378b4e144a9851e7b34d9b748ee - Path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 8f586378b4e144a9851e7b34d9b748ee' -> (Import Result ID: 'fa0a64f05e100454825f1c4f18645953') in 0.059 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1dab395559a8bbb82e356329d53ede80 DependenciesID=8f2c0f85cf8153e3de107cb65f1c66eb StaticDependenciesID=4d123fb2bb14576911fc61552b30c81d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.4107353Z
+  Time since last request: 0.0002242 seconds.
+  importAddress: GUID: f54d1bd14bd3ca042bd867b519fee8cc - Path: Assets/TextMesh Pro - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f54d1bd14bd3ca042bd867b519fee8cc - Path: Assets/TextMesh Pro - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f54d1bd14bd3ca042bd867b519fee8cc' -> (Import Result ID: '63452b45bf47173d0c415a79922bc60f') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2fa09cb88e9621af9f5e47b2e68fda42 DependenciesID=c8faca08af3857eb8eb36d490fff7305 StaticDependenciesID=0efa89751841ea59b3e327c2f2edd3ed 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.4324559Z
+  Time since last request: 0.0003696 seconds.
+  importAddress: GUID: fe393ace9b354375a9cb14cdbbc28be4 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: fe393ace9b354375a9cb14cdbbc28be4 - Path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: fe393ace9b354375a9cb14cdbbc28be4' -> (Import Result ID: 'cc093b31e25dd8c053505ca90f39cfd7') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1739db8d36c61dd98ef070e2251284cc DependenciesID=b93fcc73a159916ad100367524721bca StaticDependenciesID=3e6e2f4896fbb623ae7879b3066ff14a 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.4568144Z
+  Time since last request: 0.0004687 seconds.
+  importAddress: GUID: cbd1e2a1a972644eea7bfae3d6f2b979 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Controller/RightController.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: cbd1e2a1a972644eea7bfae3d6f2b979 - Path: Assets/Samples/XR Interaction Toolkit/3.5.1/XR Interaction Simulator/UI/Controller/RightController.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: cbd1e2a1a972644eea7bfae3d6f2b979' -> (Import Result ID: 'be7fd3622e6be21620a445f673de9b29') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=34835466292221903d5ccc0c38cdb5da DependenciesID=1ce862e0cf3494e79eb6cf7f85053924 StaticDependenciesID=c7962ae4bf69942187f9e4f75b3b64c7 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:23:23.4894094Z
+  Time since last request: 0.0005508 seconds.
+  importAddress: GUID: 3f5b5dff67a942289a9defa416b206f3 - Path: Assets/TextMesh Pro/Resources/TMP Settings.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3f5b5dff67a942289a9defa416b206f3 - Path: Assets/TextMesh Pro/Resources/TMP Settings.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3f5b5dff67a942289a9defa416b206f3' -> (Import Result ID: '6baf611b620ab69ae89425ef26e0a787') in 0.042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=50902deda410a5275664e20fae5c5d5e DependenciesID=f1f2c21610fd804281766cc22c6b6486 StaticDependenciesID=5bf506d97e28743410e4305eb989a7b1 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Refreshing native plugins compatible for Editor in 19.56 ms, found 10 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (2.6 MB). Loaded Objects now: 8805.
+Memory consumption went from 362.0 MB to 359.4 MB.
+Total: 14.966000 ms (FindLiveObjects: 0.596000 ms CreateObjectMapping: 1.638300 ms MarkObjects: 11.892300 ms  DeleteObjects: 0.837900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-11-11T00:28:31.1412448Z
+  Time since last request: 307.59501740000002 seconds.
+  importAddress: GUID: 8d5fd2ba1cb5f714b8634ebc2977725e - Path: Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 8d5fd2ba1cb5f714b8634ebc2977725e - Path: Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 8d5fd2ba1cb5f714b8634ebc2977725e' -> (Import Result ID: '5f4e0062f694c5dce8857b7a2e2e28da') in 0.078 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bb1092c30eb3b3b10c4387c51112ba74 DependenciesID=a11465e258d501261d8af05f30923960 StaticDependenciesID=ce48f5f738e2e5f5ad84db0974ab6617 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1983
+Editor requested this worker to shutdown with reason: Editor is closing down
+AcceleratorClientConnectionCallback - disconnected - :0
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

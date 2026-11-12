@@ -119,6 +119,36 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.xr.interaction.toolkit@3.5.1": {
+      "name": "com.unity.xr.interaction.toolkit",
+      "displayName": "XR Interaction Toolkit",
+      "resolvedPath": "F:\\Git\\VR-wea\\VR-wea\\VR-wea\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@63ca3b7ce776",
+      "fingerprint": "63ca3b7ce7769ce04b25877550855d704b99cd74",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "3.5.1",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.xr.management@4.7.0": {
+      "name": "com.unity.xr.management",
+      "displayName": "XR Plugin Management",
+      "resolvedPath": "F:\\Git\\VR-wea\\VR-wea\\VR-wea\\Library\\PackageCache\\com.unity.xr.management@2ad85c7dd480",
+      "fingerprint": "2ad85c7dd480d2c8bfb047d40fa76e0745f5128d",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "4.7.0",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.xr.openxr@1.17.1": {
+      "name": "com.unity.xr.openxr",
+      "displayName": "OpenXR Plugin",
+      "resolvedPath": "F:\\Git\\VR-wea\\VR-wea\\VR-wea\\Library\\PackageCache\\com.unity.xr.openxr@58837b2992e0",
+      "fingerprint": "58837b2992e0aed54ab5302ff677e8efcbb88bdf",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "1.17.1",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.modules.accessibility@1.0.0": {
       "name": "com.unity.modules.accessibility",
       "displayName": "Accessibility",
@@ -407,6 +437,36 @@
       "source": "builtin",
       "testable": false
     },
+    "com.unity.xr.core-utils@2.6.0": {
+      "name": "com.unity.xr.core-utils",
+      "displayName": "XR Core Utilities",
+      "resolvedPath": "F:\\Git\\VR-wea\\VR-wea\\VR-wea\\Library\\PackageCache\\com.unity.xr.core-utils@a8b900321199",
+      "fingerprint": "a8b900321199038fe4200211a52f46d2f4bae786",
+      "editorCompatibility": "2022.3.0f1",
+      "version": "2.6.0",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.xr.legacyinputhelpers@3.0.1": {
+      "name": "com.unity.xr.legacyinputhelpers",
+      "displayName": "XR Legacy Input Helpers",
+      "resolvedPath": "F:\\Git\\VR-wea\\VR-wea\\VR-wea\\Library\\PackageCache\\com.unity.xr.legacyinputhelpers@3f62d634f63b",
+      "fingerprint": "3f62d634f63be463f9e1f7b0deea814a27526da4",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "3.0.1",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.mathematics@1.4.0": {
+      "name": "com.unity.mathematics",
+      "displayName": "Mathematics",
+      "resolvedPath": "F:\\Git\\VR-wea\\VR-wea\\VR-wea\\Library\\PackageCache\\com.unity.mathematics@981956d94fb6",
+      "fingerprint": "981956d94fb67524c64303c45a850c84830359e9",
+      "editorCompatibility": "6000.5.0a1",
+      "version": "1.4.0",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.ext.nunit@2.1.0": {
       "name": "com.unity.ext.nunit",
       "displayName": "Custom NUnit",
@@ -495,16 +555,6 @@
       "editorCompatibility": "2020.3.0a1",
       "version": "3.5.0",
       "source": "registry",
-      "testable": false
-    },
-    "com.unity.mathematics@1.4.0": {
-      "name": "com.unity.mathematics",
-      "displayName": "Mathematics",
-      "resolvedPath": "F:\\Git\\VR-wea\\VR-wea\\VR-wea\\Library\\PackageCache\\com.unity.mathematics@981956d94fb6",
-      "fingerprint": "981956d94fb67524c64303c45a850c84830359e9",
-      "editorCompatibility": "6000.5.0a1",
-      "version": "1.4.0",
-      "source": "builtin",
       "testable": false
     }
   }
