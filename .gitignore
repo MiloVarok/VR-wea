@@ -1,6 +1,21 @@
 VR-wea/Library/PackageCache/com.unity.burst@2f3d916873ea/.Runtime/libburst-llvm-21.dylib
 VR-wea/Library/ArtifactDB
-VR-wea\VR-wea\VR-wea\Library\ArtifactDB
-VR-wea\VR-wea\Library\ArtifactDB
-F:\Git\VR-wea\VR-wea\VR-wea\Library\ArtifactDB
-VR-wea/Library/ArtifactDB
+
+# Ignorar carpetas autogeneradas de Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Ignorar archivos de IDE y compilados
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.apk
