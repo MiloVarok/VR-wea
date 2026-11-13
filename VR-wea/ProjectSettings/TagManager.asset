@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Lighter
+  - Magnifier
   layers:
   - Default
   - TransparentFX
