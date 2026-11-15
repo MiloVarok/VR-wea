@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 [System.Serializable]
 public class RuneSymbol
@@ -27,37 +28,39 @@ public class RitualManager : MonoBehaviour
     [Header("Symbol Pool & Hierarchy")]
     public List<RuneSymbol> symbolPool = new List<RuneSymbol>();
 
-    [Header("Runes & Magnifier")]
-    public GameObject runesContainer;
+    [Header("Split Runes (2 Left + 2 Right)")]
     public Image[] runeImages;
+    [Tooltip("Rune_0 a Rune_3 para detectar qué joystick presionó")]
+    public XRBaseInteractable[] runeInteractables;
     public Color normalRuneColor = Color.cyan;
     public Color pressedRuneColor = Color.green;
 
-    [Header("Box Lid & Crown Extraction")]
-    [Tooltip("Arrastrá acá el objeto de la TAPA de la caja que debe rotar para abrirse.")]
-    public Transform boxLid;
-    [Tooltip("Ángulo en grados para abrir la tapa (ej. X = -95 o +95 según el eje de la bisagra).")]
-    public Vector3 lidOpenRotationOffset = new Vector3(-95f, 0f, 0f);
-    public float lidOpenSpeed = 2.5f;
+    [Header("Box Lid Animation")]
+    public Animator[] boxAnimators;
+    public string openParameterName = "Open";
+    public bool parameterIsBool = false;
 
-    [Header("Atmosphere & Feedback")]
+    [Header("Atmosphere, Audio & Haptics")]
     public Image darkVignette;
-    public AudioSource whisperAudio;
-    public AudioSource errorAudio;
-    public AudioSource successAudio;
+    public AudioManager audioManager;
+    public HapticManager hapticManager;
+    [Tooltip("Lighter")]
+    public XRBaseInteractable lighterInteractable;
+
+    [Range(0f, 1f)] public float whisperVolAt2Candles = 0.45f;
+    [Range(0f, 1f)] public float whisperVolAt1Candle = 0.70f;
+    [Range(0f, 1f)] public float whisperVolAt0Candles = 0.95f;
+    [Range(0f, 1f)] public float blackCandleWhisperVol = 0.45f;
 
     // Estado interno del ritual
     private bool isMagnifierNearBox = false;
     private bool canSeeRunes = false;
+    private bool hasReachedFourCandles = false;
     private bool isSequenceReady = false;
     private bool isBoxOpen = false;
     private bool isRitualFinished = false;
     private int activeBlackFlames = 0;
     private float runeChaosTimer = 0f;
-
-    // Rotación de la tapa
-    private Quaternion lidClosedRotation;
-    private Quaternion lidTargetRotation;
 
     // Estado interno de las 4 runas activas
     private RuneSymbol[] activeRunes = new RuneSymbol[4];
@@ -67,6 +70,12 @@ public class RitualManager : MonoBehaviour
 
     void Start()
     {
+        if (audioManager == null)
+            audioManager = GetComponent<AudioManager>();
+
+        if (hapticManager == null)
+            hapticManager = GetComponent<HapticManager>();
+
         foreach (GameObject flame in whiteFlames)
         {
             if (flame != null)
@@ -79,16 +88,8 @@ public class RitualManager : MonoBehaviour
                 blackFlame.SetActive(false);
         }
 
-        if (runesContainer != null)
-            runesContainer.SetActive(false);
-
-        if (boxLid != null)
-        {
-            lidClosedRotation = boxLid.localRotation;
-            lidTargetRotation = lidClosedRotation * Quaternion.Euler(lidOpenRotationOffset);
-        }
-
         GenerateRandomPuzzle();
+        SetRunesVisible(false);
         StartCoroutine(ExtinguishCandlesRoutine());
     }
 
@@ -125,17 +126,10 @@ public class RitualManager : MonoBehaviour
 
     void Update()
     {
-        // Apertura suave de la tapa de la caja una vez resuelto el código y encendida la 5ta vela
-        if (isBoxOpen && boxLid != null)
-        {
-            boxLid.localRotation = Quaternion.Slerp(boxLid.localRotation, lidTargetRotation, Time.deltaTime * lidOpenSpeed);
-        }
-
         if (isRitualFinished) return;
 
         int litCount = GetLitWhiteCandlesCount();
 
-        // Oscurecimiento de pantalla y susurros
         float dangerFactor = Mathf.Clamp01((4f - litCount) / 4f);
         if (darkVignette != null)
         {
@@ -144,13 +138,10 @@ public class RitualManager : MonoBehaviour
             darkVignette.color = vignetteColor;
         }
 
-        if (whisperAudio != null)
-            whisperAudio.volume = 0.1f + (dangerFactor * 0.9f);
-
-        // Umbral de visibilidad y regeneración al caer por debajo de 3 velas
         if (litCount >= 4)
         {
             canSeeRunes = true;
+            hasReachedFourCandles = true;
         }
         else if (litCount <= 2)
         {
@@ -165,14 +156,15 @@ public class RitualManager : MonoBehaviour
             }
         }
 
-        // Comportamiento visual de los símbolos según cantidad de velas y lupa
-        if (!isBoxOpen && isMagnifierNearBox && canSeeRunes)
+        UpdateWhisperLogic(litCount);
+
+        if (!isBoxOpen && canSeeRunes)
         {
             if (litCount == 5 && !isSequenceReady)
             {
-                runesContainer.SetActive(true);
+                SetRunesVisible(true);
                 runeChaosTimer += Time.deltaTime;
-                if (runeChaosTimer >= 0.25f)
+                if (runeChaosTimer >= 0.15f)
                 {
                     runeChaosTimer = 0f;
                     ScrambleRuneSymbols();
@@ -180,17 +172,54 @@ public class RitualManager : MonoBehaviour
             }
             else if (litCount == 3 || litCount == 4)
             {
-                runesContainer.SetActive(true);
+                SetRunesVisible(true);
                 RestoreCleanSymbols();
+                runeChaosTimer = 0.15f;
             }
             else
             {
-                runesContainer.SetActive(false);
+                SetRunesVisible(false);
+                runeChaosTimer = 0.15f;
             }
         }
-        else if (runesContainer != null)
+        else
         {
-            runesContainer.SetActive(false);
+            SetRunesVisible(false);
+            runeChaosTimer = 0.15f;
+        }
+    }
+
+    private void UpdateWhisperLogic(int litWhiteCount)
+    {
+        if (audioManager == null) return;
+
+        float whiteWhisperVol = 0f;
+
+        if (hasReachedFourCandles)
+        {
+            if (litWhiteCount == 2)
+                whiteWhisperVol = whisperVolAt2Candles;
+            else if (litWhiteCount == 1)
+                whiteWhisperVol = whisperVolAt1Candle;
+            else if (litWhiteCount == 0)
+                whiteWhisperVol = whisperVolAt0Candles;
+        }
+
+        float blackWhisperVol = (activeBlackFlames > 0) ? blackCandleWhisperVol : 0f;
+
+        audioManager.SetWhisperVolume(Mathf.Max(whiteWhisperVol, blackWhisperVol));
+    }
+
+    private void SetRunesVisible(bool visible)
+    {
+        if (runeImages == null) return;
+
+        for (int i = 0; i < runeImages.Length; i++)
+        {
+            if (runeImages[i] != null && runeImages[i].gameObject.activeSelf != visible)
+            {
+                runeImages[i].gameObject.SetActive(visible);
+            }
         }
     }
 
@@ -206,8 +235,14 @@ public class RitualManager : MonoBehaviour
             {
                 litFlames[Random.Range(0, litFlames.Count)].SetActive(false);
 
-                if (Random.value < randomBlackFlameChance)
-                    IgniteBlackFlame();
+                if (hasReachedFourCandles)
+                {
+                    if (audioManager != null)
+                        audioManager.PlayRandomSpooky();
+
+                    if (Random.value < randomBlackFlameChance)
+                        IgniteBlackFlame();
+                }
             }
         }
     }
@@ -219,6 +254,8 @@ public class RitualManager : MonoBehaviour
         if (!targetFlame.activeSelf)
         {
             targetFlame.SetActive(true);
+            if (audioManager != null) audioManager.PlaySFX("CandleIgnite");
+            if (hapticManager != null) hapticManager.TriggerWhiteCandleHaptic(lighterInteractable);
             TryOpenBox();
         }
     }
@@ -227,7 +264,7 @@ public class RitualManager : MonoBehaviour
     {
         int litCount = GetLitWhiteCandlesCount();
 
-        if (isBoxOpen || isSequenceReady || !isMagnifierNearBox || !canSeeRunes) return;
+        if (isBoxOpen || isSequenceReady || !canSeeRunes) return;
         if (litCount != 3 && litCount != 4) return;
         if (runeIndex < 0 || runeIndex >= 4 || buttonPressedState[runeIndex]) return;
 
@@ -242,31 +279,50 @@ public class RitualManager : MonoBehaviour
             if (runeImages[runeIndex] != null)
                 runeImages[runeIndex].color = pressedRuneColor;
 
+            if (audioManager != null) audioManager.PlaySFX("RunePress");
+
             if (playerEnteredValues.Count >= 4)
             {
                 isSequenceReady = true;
-                if (successAudio != null) successAudio.Play();
+                if (audioManager != null) audioManager.PlaySFX("SequenceReady");
                 TryOpenBox();
             }
         }
         else
         {
+            if (hapticManager != null && runeInteractables != null && runeIndex < runeInteractables.Length)
+                hapticManager.TriggerRuneErrorHaptic(runeInteractables[runeIndex]);
+
             IgniteBlackFlame();
             ResetRunes();
-            if (errorAudio != null) errorAudio.Play();
+            if (audioManager != null) audioManager.PlaySFX("RuneError");
         }
     }
 
-    /// <summary>
-    /// Abre la tapa de la caja únicamente cuando la secuencia fue ingresada Y están las 5 velas encendidas.
-    /// </summary>
     private void TryOpenBox()
     {
         if (isSequenceReady && !isBoxOpen && GetLitWhiteCandlesCount() == 5)
         {
             isBoxOpen = true;
-            if (runesContainer != null) runesContainer.SetActive(false);
-            if (successAudio != null) successAudio.Play();
+            SetRunesVisible(false);
+            TriggerBoxOpenAnimation();
+
+            if (audioManager != null) audioManager.PlaySFX("BoxOpen");
+        }
+    }
+
+    private void TriggerBoxOpenAnimation()
+    {
+        if (boxAnimators == null || string.IsNullOrEmpty(openParameterName)) return;
+
+        foreach (Animator anim in boxAnimators)
+        {
+            if (anim == null) continue;
+
+            if (parameterIsBool)
+                anim.SetBool(openParameterName, true);
+            else
+                anim.SetTrigger(openParameterName);
         }
     }
 
@@ -323,13 +379,12 @@ public class RitualManager : MonoBehaviour
                 blackFlames[activeBlackFlames].SetActive(true);
 
             activeBlackFlames++;
+            if (audioManager != null) audioManager.PlaySFX("BlackCandle");
+            if (hapticManager != null) hapticManager.TriggerBlackCandleHaptic();
         }
     }
 
-    public void SetMagnifierNearBox(bool isNear)
-    {
-        isMagnifierNearBox = isNear;
-    }
+    public void SetMagnifierNearBox(bool isNear) { }
 
     public void CompleteRitual()
     {
@@ -337,8 +392,11 @@ public class RitualManager : MonoBehaviour
 
         isRitualFinished = true;
         if (darkVignette != null) darkVignette.gameObject.SetActive(false);
-        if (whisperAudio != null) whisperAudio.Stop();
-        if (successAudio != null) successAudio.Play();
+        if (audioManager != null)
+        {
+            audioManager.StopAllLoops();
+            audioManager.PlaySFX("Complete");
+        }
     }
 
     private int GetLitWhiteCandlesCount()
