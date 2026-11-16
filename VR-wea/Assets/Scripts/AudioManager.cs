@@ -1,10 +1,10 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
 public class SoundEffect
 {
-    [Tooltip("ID exacto para llamarlo")]
     public string id;
     public AudioClip clip;
     [Range(0f, 1f)]
@@ -19,7 +19,8 @@ public class AudioManager : MonoBehaviour
 
     [Header("Música de Fondo")]
     public AudioClip backgroundMusicClip;
-    [Range(0f, 1f)] public float backgroundMusicVolume = 0.4f;
+    [Range(0f, 1f)] public float backgroundMusicVolume = 0.30f;
+    public bool startMusicMutedForIntro = true;
 
     [Header("Loop de Susurros")]
     public AudioClip whisperLoopClip;
@@ -31,12 +32,13 @@ public class AudioManager : MonoBehaviour
 
     [Header("Pool Aleatorio de sonidos")]
     public List<AudioClip> randomSpookyClips = new List<AudioClip>();
-    [Range(0f, 1f)] public float spookyClipsVolume = 0.85f;
+    [Range(0f, 1f)] public float spookyClipsVolume = 0.25f;
 
     private AudioSource sfxSource;
     private AudioSource musicSource;
     private AudioSource whisperSource;
     private float targetWhisperVolume = 0f;
+    private Coroutine musicFadeCoroutine;
 
     private void Awake()
     {
@@ -47,7 +49,6 @@ public class AudioManager : MonoBehaviour
         }
         Instance = this;
 
-        // Reproductor de efectos puntuales
         sfxSource = gameObject.AddComponent<AudioSource>();
         sfxSource.playOnAwake = false;
         sfxSource.spatialBlend = 0f;
@@ -58,7 +59,7 @@ public class AudioManager : MonoBehaviour
         musicSource.loop = true;
         musicSource.playOnAwake = false;
         musicSource.spatialBlend = 0f;
-        musicSource.volume = backgroundMusicVolume;
+        musicSource.volume = startMusicMutedForIntro ? 0f : backgroundMusicVolume;
         if (backgroundMusicClip != null)
             musicSource.Play();
 
@@ -84,17 +85,42 @@ public class AudioManager : MonoBehaviour
             );
         }
     }
+    public void FadeInBackgroundMusic(float duration)
+    {
+        if (musicSource == null || backgroundMusicClip == null) return;
 
-    /// <summary>
-    /// Volumen objetivo de los susurros.
-    /// </summary>
+        if (!musicSource.isPlaying)
+            musicSource.Play();
+
+        if (musicFadeCoroutine != null)
+            StopCoroutine(musicFadeCoroutine);
+
+        musicFadeCoroutine = StartCoroutine(FadeMusicRoutine(backgroundMusicVolume, duration));
+    }
+
+    private IEnumerator FadeMusicRoutine(float targetVol, float duration)
+    {
+        float startVol = musicSource.volume;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.SmoothStep(0f, 1f, elapsed / Mathf.Max(0.01f, duration));
+            musicSource.volume = Mathf.Lerp(startVol, targetVol, t);
+            yield return null;
+        }
+
+        musicSource.volume = targetVol;
+    }
+
     public void SetWhisperVolume(float volume)
     {
         targetWhisperVolume = Mathf.Clamp01(volume);
     }
 
     /// <summary>
-    /// Reproduce un sonido por su ID. Desde código y desde eventos XR Grab Interactable.
+    /// Reproduce un sonido por su ID.
     /// </summary>
     public void PlaySFX(string soundId)
     {
@@ -109,10 +135,7 @@ public class AudioManager : MonoBehaviour
             sfxSource.pitch = Random.Range(1f - sfx.pitchVariation, 1f + sfx.pitchVariation);
             sfxSource.PlayOneShot(sfx.clip, sfx.volume);
         }
-        else
-        {
-            Debug.LogWarning($"[AudioManager] No se encontró el sonido con ID: '{soundId}' o no tiene AudioClip asignado.");
-        }
+        
     }
 
     public void PlayRandomSpooky()

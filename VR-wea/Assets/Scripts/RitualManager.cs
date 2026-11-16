@@ -38,22 +38,21 @@ public class RitualManager : MonoBehaviour
     public Animator[] boxAnimators;
     public string openParameterName = "Open";
     public bool parameterIsBool = false;
-    [Tooltip("LiquidDripEmitter")]
     public ParticleSystem crownLiquidParticles;
 
-    [Header("Atmosphere, Audio & Haptics")]
+    [Header("Atmosphere, Audio & Menu")]
     public Image darkVignette;
     public AudioManager audioManager;
-    public HapticManager hapticManager;
-    public XRBaseInteractable lighterInteractable;
+    public GameMenuManager gameMenuManager;
+    [Tooltip("Desmarcar si se usa el menu inicial")]
+    public bool startRitualImmediately = false;
 
-    [Range(0f, 1f)] public float whisperVolAt2Candles = 0.45f;
-    [Range(0f, 1f)] public float whisperVolAt1Candle = 0.70f;
-    [Range(0f, 1f)] public float whisperVolAt0Candles = 0.95f;
-    [Range(0f, 1f)] public float blackCandleWhisperVol = 0.45f;
+    [Range(0f, 1f)] public float whisperVolAt2Candles = 0.15f;
+    [Range(0f, 1f)] public float whisperVolAt1Candle = 0.30f;
+    [Range(0f, 1f)] public float whisperVolAt0Candles = 0.55f;
+    [Range(0f, 1f)] public float blackCandleWhisperVol = 0.20f;
 
-    // Estado interno del ritual
-    private bool isMagnifierNearBox = false;
+    private bool isRitualStarted = false;
     private bool canSeeRunes = false;
     private bool hasReachedFourCandles = false;
     private bool isSequenceReady = false;
@@ -62,7 +61,6 @@ public class RitualManager : MonoBehaviour
     private int activeBlackFlames = 0;
     private float runeChaosTimer = 0f;
 
-    // Estado interno de las 4 runas activas
     private RuneSymbol[] activeRunes = new RuneSymbol[4];
     private List<int> expectedHierarchyOrder = new List<int>();
     private List<int> playerEnteredValues = new List<int>();
@@ -73,8 +71,8 @@ public class RitualManager : MonoBehaviour
         if (audioManager == null)
             audioManager = GetComponent<AudioManager>();
 
-        if (hapticManager == null)
-            hapticManager = GetComponent<HapticManager>();
+        if (gameMenuManager == null)
+            gameMenuManager = GetComponent<GameMenuManager>();
 
         if (crownLiquidParticles != null)
             crownLiquidParticles.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
@@ -93,6 +91,15 @@ public class RitualManager : MonoBehaviour
 
         GenerateRandomPuzzle();
         SetRunesVisible(false);
+
+        if (startRitualImmediately)
+            StartRitual();
+    }
+
+    public void StartRitual()
+    {
+        if (isRitualStarted) return;
+        isRitualStarted = true;
         StartCoroutine(ExtinguishCandlesRoutine());
     }
 
@@ -100,7 +107,7 @@ public class RitualManager : MonoBehaviour
     {
         if (symbolPool.Count < 4)
         {
-            Debug.LogError("[RitualManager] Necesitás cargar la Symbol Pool.");
+            Debug.LogError("[RitualManager] al menos 4 símbolos en la Pool.");
             return;
         }
 
@@ -129,7 +136,7 @@ public class RitualManager : MonoBehaviour
 
     void Update()
     {
-        if (isRitualFinished) return;
+        if (!isRitualStarted || isRitualFinished) return;
 
         int litCount = GetLitWhiteCandlesCount();
 
@@ -252,13 +259,12 @@ public class RitualManager : MonoBehaviour
 
     public void IgniteWhiteCandle(GameObject targetFlame)
     {
-        if (isRitualFinished || targetFlame == null) return;
+        if (!isRitualStarted || isRitualFinished || targetFlame == null) return;
 
         if (!targetFlame.activeSelf)
         {
             targetFlame.SetActive(true);
             if (audioManager != null) audioManager.PlaySFX("CandleIgnite");
-            if (hapticManager != null) hapticManager.TriggerWhiteCandleHaptic(lighterInteractable);
             TryOpenBox();
         }
     }
@@ -267,7 +273,7 @@ public class RitualManager : MonoBehaviour
     {
         int litCount = GetLitWhiteCandlesCount();
 
-        if (isBoxOpen || isSequenceReady || !canSeeRunes) return;
+        if (!isRitualStarted || isBoxOpen || isSequenceReady || !canSeeRunes) return;
         if (litCount != 3 && litCount != 4) return;
         if (runeIndex < 0 || runeIndex >= 4 || buttonPressedState[runeIndex]) return;
 
@@ -293,9 +299,6 @@ public class RitualManager : MonoBehaviour
         }
         else
         {
-            if (hapticManager != null && runeInteractables != null && runeIndex < runeInteractables.Length)
-                hapticManager.TriggerRuneErrorHaptic(runeInteractables[runeIndex]);
-
             IgniteBlackFlame();
             ResetRunes();
             if (audioManager != null) audioManager.PlaySFX("RuneError");
@@ -386,7 +389,6 @@ public class RitualManager : MonoBehaviour
 
             activeBlackFlames++;
             if (audioManager != null) audioManager.PlaySFX("BlackCandle");
-            if (hapticManager != null) hapticManager.TriggerBlackCandleHaptic();
         }
     }
 
@@ -398,11 +400,15 @@ public class RitualManager : MonoBehaviour
 
         isRitualFinished = true;
         if (darkVignette != null) darkVignette.gameObject.SetActive(false);
+
         if (audioManager != null)
         {
             audioManager.StopAllLoops();
             audioManager.PlaySFX("Complete");
         }
+
+        if (gameMenuManager != null)
+            gameMenuManager.ShowVictoryScreen();
     }
 
     private int GetLitWhiteCandlesCount()
