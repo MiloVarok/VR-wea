@@ -523,6 +523,7 @@
 -analyzer:"F:/Unity/6000.5.8f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"F:/Unity/6000.5.8f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/AudioManager.cs"
+"Assets/Scripts/BlackLiquidPuddleSpawner.cs"
 "Assets/Scripts/CrownExtractionTrigger.cs"
 "Assets/Scripts/HapticManager.cs"
 "Assets/Scripts/ItemTableRespawn.cs"

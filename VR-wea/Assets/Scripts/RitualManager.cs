@@ -30,21 +30,21 @@ public class RitualManager : MonoBehaviour
 
     [Header("Split Runes (2 Left + 2 Right)")]
     public Image[] runeImages;
-    [Tooltip("Rune_0 a Rune_3 para detectar qué joystick presionó")]
     public XRBaseInteractable[] runeInteractables;
     public Color normalRuneColor = Color.cyan;
     public Color pressedRuneColor = Color.green;
 
-    [Header("Box Lid Animation")]
+    [Header("Box Lid Animation & Crown Drip")]
     public Animator[] boxAnimators;
     public string openParameterName = "Open";
     public bool parameterIsBool = false;
+    [Tooltip("LiquidDripEmitter")]
+    public ParticleSystem crownLiquidParticles;
 
     [Header("Atmosphere, Audio & Haptics")]
     public Image darkVignette;
     public AudioManager audioManager;
     public HapticManager hapticManager;
-    [Tooltip("Lighter")]
     public XRBaseInteractable lighterInteractable;
 
     [Range(0f, 1f)] public float whisperVolAt2Candles = 0.45f;
@@ -76,6 +76,9 @@ public class RitualManager : MonoBehaviour
         if (hapticManager == null)
             hapticManager = GetComponent<HapticManager>();
 
+        if (crownLiquidParticles != null)
+            crownLiquidParticles.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+
         foreach (GameObject flame in whiteFlames)
         {
             if (flame != null)
@@ -97,7 +100,7 @@ public class RitualManager : MonoBehaviour
     {
         if (symbolPool.Count < 4)
         {
-            Debug.LogError("[RitualManager] Necesitás cargar al menos 4 símbolos en Symbol Pool.");
+            Debug.LogError("[RitualManager] Necesitás cargar la Symbol Pool.");
             return;
         }
 
@@ -306,6 +309,9 @@ public class RitualManager : MonoBehaviour
             isBoxOpen = true;
             SetRunesVisible(false);
             TriggerBoxOpenAnimation();
+
+            if (crownLiquidParticles != null)
+                crownLiquidParticles.Play();
 
             if (audioManager != null) audioManager.PlaySFX("BoxOpen");
         }
