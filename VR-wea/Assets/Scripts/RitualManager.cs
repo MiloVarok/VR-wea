@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 [System.Serializable]
@@ -34,17 +35,21 @@ public class RitualManager : MonoBehaviour
     public Color normalRuneColor = Color.cyan;
     public Color pressedRuneColor = Color.green;
 
-    [Header("Box Lid Animation & Crown Drip")]
+    [Header("Box Lid Animation & Crown")]
     public Animator[] boxAnimators;
     public string openParameterName = "Open";
     public bool parameterIsBool = false;
     public ParticleSystem crownLiquidParticles;
+    [Tooltip("Arrastrá acá el objeto Crown para bloquear su agarre hasta que se abra la caja y detectar cuando la tomás.")]
+    public XRGrabInteractable crownGrabInteractable;
+    [Tooltip("Segundos después de agarrar la corona antes de mostrar el mensaje de finalización.")]
+    public float victoryMessageDelay = 3.5f;
 
     [Header("Atmosphere, Audio & Menu")]
     public Image darkVignette;
+    public float vignetteFadeSpeed = 1.5f;
     public AudioManager audioManager;
     public GameMenuManager gameMenuManager;
-    [Tooltip("Desmarcar si se usa el menu inicial")]
     public bool startRitualImmediately = false;
 
     [Range(0f, 1f)] public float whisperVolAt2Candles = 0.15f;
@@ -77,6 +82,21 @@ public class RitualManager : MonoBehaviour
         if (crownLiquidParticles != null)
             crownLiquidParticles.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
 
+        // Bloquea el agarre de la corona mientras la caja está cerrada
+        if (crownGrabInteractable != null)
+        {
+            crownGrabInteractable.enabled = false;
+            crownGrabInteractable.selectEntered.AddListener(OnCrownGrabbed);
+        }
+
+        
+        if (darkVignette != null)
+        {
+            Color c = darkVignette.color;
+            c.a = 0f;
+            darkVignette.color = c;
+        }
+
         foreach (GameObject flame in whiteFlames)
         {
             if (flame != null)
@@ -96,6 +116,12 @@ public class RitualManager : MonoBehaviour
             StartRitual();
     }
 
+    private void OnDestroy()
+    {
+        if (crownGrabInteractable != null)
+            crownGrabInteractable.selectEntered.RemoveListener(OnCrownGrabbed);
+    }
+
     public void StartRitual()
     {
         if (isRitualStarted) return;
@@ -105,11 +131,7 @@ public class RitualManager : MonoBehaviour
 
     public void GenerateRandomPuzzle()
     {
-        if (symbolPool.Count < 4)
-        {
-            Debug.LogError("[RitualManager] al menos 4 símbolos en la Pool.");
-            return;
-        }
+        if (symbolPool.Count < 4) return;
 
         List<RuneSymbol> shuffledPool = symbolPool.OrderBy(x => Random.value).ToList();
 
@@ -140,11 +162,15 @@ public class RitualManager : MonoBehaviour
 
         int litCount = GetLitWhiteCandlesCount();
 
-        float dangerFactor = Mathf.Clamp01((4f - litCount) / 4f);
+        
         if (darkVignette != null)
         {
+            float targetAlpha = hasReachedFourCandles
+                ? Mathf.Clamp01((4f - litCount) / 4f) * 0.85f
+                : 0f;
+
             Color vignetteColor = darkVignette.color;
-            vignetteColor.a = dangerFactor * 0.85f;
+            vignetteColor.a = Mathf.MoveTowards(vignetteColor.a, targetAlpha, Time.deltaTime * vignetteFadeSpeed);
             darkVignette.color = vignetteColor;
         }
 
@@ -216,7 +242,6 @@ public class RitualManager : MonoBehaviour
         }
 
         float blackWhisperVol = (activeBlackFlames > 0) ? blackCandleWhisperVol : 0f;
-
         audioManager.SetWhisperVolume(Mathf.Max(whiteWhisperVol, blackWhisperVol));
     }
 
@@ -313,11 +338,32 @@ public class RitualManager : MonoBehaviour
             SetRunesVisible(false);
             TriggerBoxOpenAnimation();
 
+            // Habilita el agarre de la corona cuando se abre la caja
+            if (crownGrabInteractable != null)
+                crownGrabInteractable.enabled = true;
+
             if (crownLiquidParticles != null)
                 crownLiquidParticles.Play();
 
             if (audioManager != null) audioManager.PlaySFX("BoxOpen");
         }
+    }
+
+    private void OnCrownGrabbed(SelectEnterEventArgs args)
+    {
+        if (!isBoxOpen || isRitualFinished) return;
+
+        
+        if (crownLiquidParticles != null && !crownLiquidParticles.isPlaying)
+            crownLiquidParticles.Play();
+
+        StartCoroutine(FinishRitualAfterDelay());
+    }
+
+    private IEnumerator FinishRitualAfterDelay()
+    {
+        yield return new WaitForSeconds(victoryMessageDelay);
+        CompleteRitual();
     }
 
     private void TriggerBoxOpenAnimation()

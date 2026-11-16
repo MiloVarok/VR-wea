@@ -10,10 +10,10 @@ public class GameMenuManager : MonoBehaviour
     public RitualManager ritualManager;
     public AudioManager audioManager;
 
-    [Header("Menú Inicial")]
+    [Header("Menú Inicial (World Space)")]
     public GameObject startMenuPanel;
 
-    [Header("Fade In")]
+    [Header("Transición de Entrada (Fade In)")]
     public Image blackFadeOverlay;
     public float introFadeDuration = 2.5f;
 
@@ -22,6 +22,8 @@ public class GameMenuManager : MonoBehaviour
     public TextMeshProUGUI victoryMessageText;
     [TextArea(2, 4)]
     public string victoryMessage = "Has completado el ritual.\nLa corona ha sido liberada.";
+    [Tooltip("Segundos que permanece visible el mensaje final antes de cerrar el juego automáticamente (0 = no cerrar solo).")]
+    public float autoQuitDelayAfterVictory = 8f;
 
     private bool hasGameStarted = false;
 
@@ -48,7 +50,6 @@ public class GameMenuManager : MonoBehaviour
             blackFadeOverlay.raycastTarget = false;
         }
     }
-
 
     public void StartGame()
     {
@@ -92,7 +93,6 @@ public class GameMenuManager : MonoBehaviour
             ritualManager.StartRitual();
     }
 
-
     public void ShowVictoryScreen()
     {
         if (victoryMessageText != null)
@@ -100,14 +100,22 @@ public class GameMenuManager : MonoBehaviour
 
         if (victoryPanel != null)
             victoryPanel.SetActive(true);
+
+        if (autoQuitDelayAfterVictory > 0f)
+            StartCoroutine(AutoQuitRoutine(autoQuitDelayAfterVictory));
     }
 
+    private IEnumerator AutoQuitRoutine(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        QuitGame();
+    }
 
     public void RestartGame()
     {
+        StopAllCoroutines();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
 
     public void QuitGame()
     {
