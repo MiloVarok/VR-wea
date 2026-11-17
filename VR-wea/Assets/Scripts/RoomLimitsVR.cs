@@ -8,7 +8,7 @@ public class LimitesHabitacionVR : MonoBehaviour
 
     [Header("Exclusión de la Mesa (Cilindro central)")]
     public Transform centroMesa;
-    public float radioExclusionMesa = 1.05f;
+    public float radioExclusionMesa = 0.5f;
 
     [Header("Referencia a la Cámara")]
     public Transform mainCamera;
