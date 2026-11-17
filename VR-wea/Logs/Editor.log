@@ -10343,3 +10343,320 @@ Imported 'GUID: 99c9720ab356a0642a771bea13969a05' -> (Import Result ID: 'ebfcad8
 Refreshing native plugins compatible for Editor in 18.45 ms, found 10 plugins.
 Asset Pipeline Refresh (id=28f696bbdb06f5349acb37e16853a832): Total: 0.138 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
 Asset Pipeline Refresh (id=625f6c397862eff46b1e5bb718297ecf): Total: 0.029 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=ce8329292c113f24faa7e2e72e86a9d4): Total: 0.007 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+[Licensing::Client] Successfully resolved entitlement details
+GUILayout: Mismatched LayoutGroup.scrollWheel
+Asset Pipeline Refresh (id=89e4c370f2216ca489cdecda0e11c114): Total: 0.011 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+HorizontalScope was not disposed! You should use the 'using' keyword or manually call Dispose.
+Refreshing native plugins compatible for Editor in 18.04 ms, found 10 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.192 seconds
+Domain Reload Profiling: 5347ms
+	BeginReloadAssembly (1627ms)
+		DisableScriptedObjects (428ms)
+		CreateAndSetChildDomain (907ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (152ms)
+	LoadAllAssembliesAndSetupDomain (345ms)
+		LoadAssemblies (217ms)
+		AnalyzeDomain (45ms)
+			TypeCache.Refresh (8ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (3193ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			BeforeProcessingInitializeOnLoad (166ms)
+			ProcessInitializeOnLoadAttributes (502ms)
+			ProcessInitializeOnLoadMethodAttributes (312ms)
+			AfterProcessingInitializeOnLoad (27ms)
+		AwakeInstancesAfterBackupRestoration (1339ms)
+
+Asset Pipeline Refresh (id=b7e6b73b44658194bb7993f4cbcd8712): Total: 5.816 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=3432 ms
+		Asset DB Callback time: managed=33 ms, native=1 ms
+		Scripting: domain reloads=1, domain reload time=2348 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=1833, non-scripts=3247
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 5.564ms
+	ApplyChangesToAssetFolders: 0.501ms
+	Collect global state as custom dependencies: 6.936ms
+	ProcessAssetsWithTransientArtifactChanges: 0.213ms
+	CategorizeAssets: 75.563ms
+	CompileScripts: 1.302ms
+	ImportOutOfDateAssets: 3277.992ms (3234.657ms without children)
+		CollectScriptTypesHashes: 1.044ms
+		ReloadNativeAssets: 1.837ms
+		UnloadImportedAssets: 0.536ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.861ms
+		ImportSchedulerStart: 40.039ms
+	PostProcessAllAssets: 33.297ms
+		MonoPostProcessAllAssets: 33.292ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 14.900ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.298ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.121ms
+			AssetChangedListener.OnPostprocessAllAssets 1.159ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.884ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.379ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.320ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.316ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.292ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.220ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.170ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.162ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 0.121ms
+			SyncVS.PostprocessSyncProject 0.114ms
+			AssetPostprocessor.OnPostprocessAllAssets 0.081ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.233ms
+	PersistCurrentRevisions: 0.153ms
+	GenerateScriptTypeHashes: 5.776ms
+	GenerateScriptTypeSerializationHashes: 9.823ms
+	Untracked: 2402.850ms
+
+Refreshing native plugins compatible for Editor in 17.42 ms, found 10 plugins.
+Importing 'GUID: 9a9f070394627e14c840775d067eec64 - Path: Assets/XR/Settings/OpenXRPackageSettings.asset' with importer (NativeFormatImporter)
+Imported 'GUID: 9a9f070394627e14c840775d067eec64' -> (Import Result ID: 'f7cb06fb29563c9243bc72f20fc8c760') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=4f8b6cbedfd0ebf080cae689b6528d4e DependenciesID=3360970369a06483072fb8707d54e3da StaticDependenciesID=494c800aec1161b7ca0692431540f5ed 
+Refreshing native plugins compatible for Editor in 15.14 ms, found 10 plugins.
+Asset Pipeline Refresh (id=fc3db8d198fc343418e2438b2b5d3e1c): Total: 0.278 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Loading OpenXR loader library at path: F:\Git\VR-wea\VR-wea\VR-wea\Library\PackageCache\com.unity.xr.openxr@58837b2992e0\RuntimeLoaders\windows\x64\openxr_loader.dll
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEngine.XR.OpenXR.OpenXRLoaderBase:LoadOpenXRSymbols () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Runtime/OpenXRLoader.cs:555)
+UnityEngine.XR.OpenXR.OpenXRLoaderBase:InitializeInternal () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Runtime/OpenXRLoader.cs:237)
+UnityEngine.XR.OpenXR.OpenXRLoaderBase:Initialize () (at ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Runtime/OpenXRLoader.cs:207)
+UnityEngine.XR.Management.XRManagerSettings:InitializeLoaderSync () (at ./Library/PackageCache/com.unity.xr.management@2ad85c7dd480/Runtime/XRManagerSettings.cs:177)
+UnityEngine.XR.Management.XRGeneralSettings:InitXRSDK () (at ./Library/PackageCache/com.unity.xr.management@2ad85c7dd480/Runtime/XRGeneralSettings.cs:154)
+UnityEngine.XR.Management.XRGeneralSettings:AttemptInitializeXRSDKOnLoad () (at ./Library/PackageCache/com.unity.xr.management@2ad85c7dd480/Runtime/XRGeneralSettings.cs:112)
+
+(Filename: ./Library/PackageCache/com.unity.xr.openxr@58837b2992e0/Runtime/OpenXRLoader.cs Line: 555)
+
+[Subsystems] Loading plugin UnityOpenXR for subsystem OpenXR Display...
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeManifestFile::FindManifestFiles - failed to find active runtime file in registry
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - unknown error
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - failed to load a runtime
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed to find default runtime with RuntimeInterface::LoadRuntime()
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed querying extension properties
+[XR] [35616] [22:26:36.223][Error  ] xrEnumerateInstanceExtensionProperties: XR_ERROR_RUNTIME_UNAVAILABLE
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeManifestFile::FindManifestFiles - failed to find active runtime file in registry
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - unknown error
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - failed to load a runtime
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed to find default runtime with RuntimeInterface::LoadRuntime()
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed querying extension properties
+[XR] [35616] [22:26:36.224][Error  ] xrEnumerateInstanceExtensionProperties: XR_ERROR_RUNTIME_UNAVAILABLE
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeManifestFile::FindManifestFiles - failed to find active runtime file in registry
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - unknown error
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - failed to load a runtime
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed to find default runtime with RuntimeInterface::LoadRuntime()
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed querying extension properties
+[XR] [35616] [22:26:36.224][Error  ] xrEnumerateInstanceExtensionProperties: XR_ERROR_RUNTIME_UNAVAILABLE
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeManifestFile::FindManifestFiles - failed to find active runtime file in registry
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - unknown error
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - failed to load a runtime
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed to find default runtime with RuntimeInterface::LoadRuntime()
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed querying extension properties
+[XR] [35616] [22:26:36.224][Error  ] xrEnumerateInstanceExtensionProperties: XR_ERROR_RUNTIME_UNAVAILABLE
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeManifestFile::FindManifestFiles - failed to find active runtime file in registry
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - unknown error
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - failed to load a runtime
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed to find default runtime with RuntimeInterface::LoadRuntime()
+Error [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Failed querying extension properties
+[XR] [35616] [22:26:36.224][Error  ] xrEnumerateInstanceExtensionProperties: XR_ERROR_RUNTIME_UNAVAILABLE
+[XR] [35616] [22:26:36.225][Info   ] Available Layers: (0)
+Error [GENERAL | xrCreateInstance | OpenXR-Loader] : RuntimeManifestFile::FindManifestFiles - failed to find active runtime file in registry
+Error [GENERAL | xrCreateInstance | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - unknown error
+Error [GENERAL | xrCreateInstance | OpenXR-Loader] : RuntimeInterface::LoadRuntimes - failed to load a runtime
+Error [GENERAL | xrCreateInstance | OpenXR-Loader] : Failed loading runtime information
+Error [GENERAL | xrCreateInstance | OpenXR-Loader] : xrCreateInstance failed
+[XR] [35616] [22:26:36.225][Error  ] xrCreateInstance: XR_ERROR_RUNTIME_UNAVAILABLE
+[Subsystems] Failed to initialize subsystem OpenXR Display [error: 1]
+[XR] [35616] [22:26:36.226][Error  ] xrPollEvent: XR_ERROR_FUNCTION_UNSUPPORTED
+[XR] [35616] [22:26:36.227][Info   ] 
+
+==== Start Unity OpenXR Diagnostic Report ====
+
+
+[XR] [35616] [22:26:36.227][Info   ] ==== Report Reason: System Shutdown ====
+
+
+[XR] [35616] [22:26:36.227][Info   ] ==== OpenXR Settings ====
+[XR] [35616] [22:26:36.227][Info   ] 
+[XR] [35616] [22:26:36.227][Info   ] Symmetric Projection: False
+[XR] [35616] [22:26:36.227][Info   ] Stereo Rendering Mode: SinglePassInstanced
+[XR] [35616] [22:26:36.227][Info   ] Latency Optimization: PrioritizeRendering
+[XR] [35616] [22:26:36.227][Info   ] Color Submission Modes: kRenderTextureFormatGroup8888
+[XR] [35616] [22:26:36.227][Info   ] Depth Submission Mode: None
+[XR] [35616] [22:26:36.227][Info   ] Space Warp Motion Vector Texture Format: RGBA16f
+[XR] [35616] [22:26:36.227][Info   ] Optimize Buffer Discards: False
+[XR] [35616] [22:26:36.227][Info   ] Multiview Render Regions Optimization Mode: None
+[XR] [35616] [22:26:36.227][Info   ] Use OpenXR Predicted Time: True
+[XR] [35616] [22:26:36.227][Info   ] Foveated Rendering API: SRPFoveation
+[XR] [35616] [22:26:36.227][Info   ] 
+[XR] [35616] [22:26:36.227][Info   ] ==== OpenXR Provider Info ====
+[XR] [35616] [22:26:36.227][Info   ] 
+[XR] [35616] [22:26:36.227][Info   ] Provider Version: 324c489
+[XR] [35616] [22:26:36.227][Info   ] App: VR-wea #1521753221
+[XR] [35616] [22:26:36.227][Info   ] Engine: 6000.5.8f1 #89162753
+[XR] [35616] [22:26:36.227][Info   ] 
+[XR] [35616] [22:26:36.227][Info   ] ==== OpenXR Runtime Info ====
+[XR] [35616] [22:26:36.227][Info   ] 
+[XR] [35616] [22:26:36.227][Info   ] Available Layers: (0)
+[XR] [35616] [22:26:36.227][Info   ] 
+[XR] [35616] [22:26:36.227][Info   ] ==== Last 20 non-XR_SUCCESS returns ====
+[XR] [35616] [22:26:36.227][Info   ] [FAILURE] xrEnumerateInstanceExtensionProperties: XR_ERROR_RUNTIME_UNAVAILABLE (5x)
+[XR] [35616] [22:26:36.227][Info   ] [FAILURE] xrCreateInstance: XR_ERROR_RUNTIME_UNAVAILABLE (1x)
+[XR] [35616] [22:26:36.227][Info   ] [FAILURE] xrPollEvent: XR_ERROR_FUNCTION_UNSUPPORTED (1x)
+[XR] [35616] [22:26:36.227][Info   ] 
+[XR] [35616] [22:26:36.227][Info   ] ==== Last 20 Events ====
+[XR] [35616] [22:26:36.227][Info   ] 
+
+==== End Unity OpenXR Diagnostic Report ====
+
+
+Only one UI Input Module allowed on the EventSystem GameObject. Disabling InputSystemUIInputModule on EventSystem since it will block the XRUIInputModule from receiving input events.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.XR.Interaction.Toolkit.UI.RegisteredUIInteractorCache:OnFindEventSystem (UnityEngine.EventSystems.EventSystem) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/UI/RegisteredUIInteractorCache.cs:172)
+UnityEngine.XR.Interaction.Toolkit.Utilities.ComponentLocatorUtility`1<UnityEngine.EventSystems.EventSystem>:FindComponentDeferred (System.Action`1<UnityEngine.EventSystems.EventSystem>,bool,bool,bool) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Utilities/ComponentLocatorUtility.cs:285)
+UnityEngine.XR.Interaction.Toolkit.UI.RegisteredUIInteractorCache:HandleOnEnable () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/UI/RegisteredUIInteractorCache.cs:96)
+UnityEngine.XR.Interaction.Toolkit.Interactors.NearFarInteractor:OnEnable () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/NearFarInteractor.cs:380)
+
+(Filename: ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/UI/RegisteredUIInteractorCache.cs Line: 172)
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            29.104 ms
+	Integration:            1654.260 ms
+	Integration of assets:  0.012 ms
+	Thread Wait Time:       -0.005 ms
+	Total Operation Time:   1683.372 ms
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+Importing 'GUID: 9a9f070394627e14c840775d067eec64 - Path: Assets/XR/Settings/OpenXRPackageSettings.asset' with importer (NativeFormatImporter)
+Imported 'GUID: 9a9f070394627e14c840775d067eec64' -> (Import Result ID: 'f7cb06fb29563c9243bc72f20fc8c760') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=4f8b6cbedfd0ebf080cae689b6528d4e DependenciesID=3360970369a06483072fb8707d54e3da StaticDependenciesID=494c800aec1161b7ca0692431540f5ed 
+Refreshing native plugins compatible for Editor in 15.53 ms, found 10 plugins.
+Asset Pipeline Refresh (id=98e4f6385cfbba340b21e7d31158e8a6): Total: 0.124 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 9a9f070394627e14c840775d067eec64 - Path: Assets/XR/Settings/OpenXRPackageSettings.asset' with importer (NativeFormatImporter)
+Imported 'GUID: 9a9f070394627e14c840775d067eec64' -> (Import Result ID: 'f7cb06fb29563c9243bc72f20fc8c760') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=4f8b6cbedfd0ebf080cae689b6528d4e DependenciesID=3360970369a06483072fb8707d54e3da StaticDependenciesID=494c800aec1161b7ca0692431540f5ed 
+Refreshing native plugins compatible for Editor in 15.16 ms, found 10 plugins.
+Asset Pipeline Refresh (id=f4a9981782748424cad5c9dc1327bf14): Total: 0.120 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Licensing::Client] Successfully resolved entitlement details
+To avoid interfering with point and click interactions, XRUIInputModule mouse and touch input will be disabled while the simulated devices are active.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRInteractionSimulator:DisableInputModuleInput () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Simulation/XRInteractionSimulator.cs:2410)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRInteractionSimulator:HandlePointAndClickActive () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Simulation/XRInteractionSimulator.cs:2461)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation.XRInteractionSimulator:Update () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Simulation/XRInteractionSimulator.cs:1438)
+
+(Filename: ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Simulation/XRInteractionSimulator.cs Line: 2410)
+
+Failed to get haptic capabilities of XRSimulatedController:/XRSimulatedController1, error code -1. Continuing assuming a single haptic channel.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics.HapticImpulseCommandChannelGroup:Initialize (UnityEngine.InputSystem.InputDevice) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/HapticImpulseCommandChannelGroup.cs:60)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics.HapticControlActionManager:GetChannelGroup (UnityEngine.InputSystem.InputAction) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/HapticControlActionManager.cs:68)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics.XRInputHapticImpulseProvider:GetChannelGroup () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/XRInputHapticImpulseProvider.cs:177)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics.HapticImpulsePlayer:SendHapticImpulse (single,single,single) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/HapticImpulsePlayer.cs:109)
+UnityEngine.XR.Interaction.Toolkit.Feedback.SimpleHapticFeedback:SendHapticImpulse (single,single,single) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Feedback/SimpleHapticFeedback.cs:336)
+UnityEngine.XR.Interaction.Toolkit.Feedback.SimpleHapticFeedback:SendHapticImpulse (UnityEngine.XR.Interaction.Toolkit.Feedback.HapticImpulseData) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Feedback/SimpleHapticFeedback.cs:320)
+UnityEngine.XR.Interaction.Toolkit.Feedback.SimpleHapticFeedback:OnHoverEntered (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Feedback/SimpleHapticFeedback.cs:398)
+UnityEngine.Events.InvokableCall`1<UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs>:Invoke (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+UnityEngine.Events.UnityEvent`1<UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs>:Invoke (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor:OnHoverEntered (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRBaseInteractor.cs:884)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor:UnityEngine.XR.Interaction.Toolkit.Interactors.IXRHoverInteractor.OnHoverEntered (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRBaseInteractor.cs:770)
+UnityEngine.XR.Interaction.Toolkit.XRInteractionManager:HoverEnter (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRHoverInteractor,UnityEngine.XR.Interaction.Toolkit.Interactables.IXRHoverInteractable,UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/XRInteractionManager.cs:2595)
+UnityEngine.XR.Interaction.Toolkit.XRInteractionManager:HoverEnterUnconditionally (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRHoverInteractor,UnityEngine.XR.Interaction.Toolkit.Interactables.IXRHoverInteractable) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/XRInteractionManager.cs:2396)
+UnityEngine.XR.Interaction.Toolkit.XRInteractionManager:InteractorHoverValidTargets (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRHoverInteractor,System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.Interactables.IXRInteractable>) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/XRInteractionManager.cs:2700)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRInteractionGroup:UpdateInteractorInteractions (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractor,bool,bool&) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRInteractionGroup.cs:1172)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRInteractionGroup:UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractionGroup.UpdateGroupMemberInteractions (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractor,UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractor&) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRInteractionGroup.cs:935)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRInteractionGroup:UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractionGroup.UpdateGroupMemberInteractions () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRInteractionGroup.cs:887)
+UnityEngine.XR.Interaction.Toolkit.XRInteractionManager:Update () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/XRInteractionManager.cs:672)
+
+(Filename: ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/HapticImpulseCommandChannelGroup.cs Line: 60)
+
+Failed to get haptic capabilities of XRSimulatedController:/XRSimulatedController, error code -1. Continuing assuming a single haptic channel.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics.HapticImpulseCommandChannelGroup:Initialize (UnityEngine.InputSystem.InputDevice) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/HapticImpulseCommandChannelGroup.cs:60)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics.HapticControlActionManager:GetChannelGroup (UnityEngine.InputSystem.InputAction) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/HapticControlActionManager.cs:68)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics.XRInputHapticImpulseProvider:GetChannelGroup () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/XRInputHapticImpulseProvider.cs:177)
+UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics.HapticImpulsePlayer:SendHapticImpulse (single,single,single) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/HapticImpulsePlayer.cs:109)
+UnityEngine.XR.Interaction.Toolkit.Feedback.SimpleHapticFeedback:SendHapticImpulse (single,single,single) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Feedback/SimpleHapticFeedback.cs:336)
+UnityEngine.XR.Interaction.Toolkit.Feedback.SimpleHapticFeedback:SendHapticImpulse (UnityEngine.XR.Interaction.Toolkit.Feedback.HapticImpulseData) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Feedback/SimpleHapticFeedback.cs:320)
+UnityEngine.XR.Interaction.Toolkit.Feedback.SimpleHapticFeedback:OnHoverEntered (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Feedback/SimpleHapticFeedback.cs:398)
+UnityEngine.Events.InvokableCall`1<UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs>:Invoke (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+UnityEngine.Events.UnityEvent`1<UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs>:Invoke (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor:OnHoverEntered (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRBaseInteractor.cs:884)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor:UnityEngine.XR.Interaction.Toolkit.Interactors.IXRHoverInteractor.OnHoverEntered (UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRBaseInteractor.cs:770)
+UnityEngine.XR.Interaction.Toolkit.XRInteractionManager:HoverEnter (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRHoverInteractor,UnityEngine.XR.Interaction.Toolkit.Interactables.IXRHoverInteractable,UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/XRInteractionManager.cs:2595)
+UnityEngine.XR.Interaction.Toolkit.XRInteractionManager:HoverEnterUnconditionally (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRHoverInteractor,UnityEngine.XR.Interaction.Toolkit.Interactables.IXRHoverInteractable) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/XRInteractionManager.cs:2396)
+UnityEngine.XR.Interaction.Toolkit.XRInteractionManager:InteractorHoverValidTargets (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRHoverInteractor,System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.Interactables.IXRInteractable>) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/XRInteractionManager.cs:2700)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRInteractionGroup:UpdateInteractorInteractions (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractor,bool,bool&) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRInteractionGroup.cs:1172)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRInteractionGroup:UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractionGroup.UpdateGroupMemberInteractions (UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractor,UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractor&) (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRInteractionGroup.cs:935)
+UnityEngine.XR.Interaction.Toolkit.Interactors.XRInteractionGroup:UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractionGroup.UpdateGroupMemberInteractions () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/Interactors/XRInteractionGroup.cs:887)
+UnityEngine.XR.Interaction.Toolkit.XRInteractionManager:Update () (at ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Interaction/XRInteractionManager.cs:672)
+
+(Filename: ./Library/PackageCache/com.unity.xr.interaction.toolkit@63ca3b7ce776/Runtime/Inputs/Haptics/HapticImpulseCommandChannelGroup.cs Line: 60)
+
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            17.601 ms
+	Integration:            495.055 ms
+	Integration of assets:  0.010 ms
+	Thread Wait Time:       -0.002 ms
+	Total Operation Time:   512.664 ms
+Unloading 276 unused Assets / (1.7 MB). Loaded Objects now: 14878.
+Memory consumption went from 1.25 GB to 1.25 GB.
+Total: 39.260700 ms (FindLiveObjects: 1.060400 ms CreateObjectMapping: 1.922200 ms MarkObjects: 34.629000 ms  DeleteObjects: 1.647800 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+[Worker4] Imported GUID: 99c9720ab356a0642a771bea13969a05 - Path: Assets/Scenes/SampleScene.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '9f93b69a2eaace9b93ad15d038d608fb') in 0.0863371 seconds
+[Worker0] Imported GUID: ea485242e2bc6664c93132f4dbc48c13 - Path: Assets/Scripts/FollowBoneTransform.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'd15f21edc0c80058873fffc0d0159d35') in 0.0929024 seconds
+GUILayout: Mismatched LayoutGroup.repaint
+Asset Pipeline Refresh (id=d0e3af5199b3b7042be4f8bff9ff218b): Total: 0.157 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=add4c4cf6b5ecf649a0af6ef32ae3a5f): Total: 0.007 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=16bdef465efae9648842d64aec6941c1): Total: 0.008 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+AcceleratorClientConnectionCallback - disconnected - :0
+Importing 'GUID: 00000000000000004000000000000000 - Path: ProjectSettings/ProjectSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000004000000000000000' -> (Import Result ID: 'ff3b52cd7e3e5cdc731ff6a10c08fd15') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=276a810dac73e1f29404d5e5f692e214 DependenciesID=05d42d4777b7ebae32346aac963ae43c StaticDependenciesID=04786cd5110e6a113be4b850b016152b 
+Refreshing native plugins compatible for Editor in 15.78 ms, found 10 plugins.
+Asset Pipeline Refresh (id=9648a69cdeca3374d8e353d6a8358291): Total: 0.155 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 99c9720ab356a0642a771bea13969a05 - Path: Assets/Scenes/SampleScene.unity' with importer (DefaultImporter)
+Imported 'GUID: 99c9720ab356a0642a771bea13969a05' -> (Import Result ID: '689f73b25f13fcf8fd0f25e1ffb914a9') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=378ca25c6c95e370f41ed482e616ed68 DependenciesID=a53be7a36c5cedae219c770d99793450 StaticDependenciesID=b33866b32ed1bc737eb5be8d8207c8b8 
+Refreshing native plugins compatible for Editor in 15.99 ms, found 10 plugins.
+Asset Pipeline Refresh (id=f3596ae8a0f3a004a870ae26da4330a6): Total: 0.139 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Worker4] Imported GUID: 99c9720ab356a0642a771bea13969a05 - Path: Assets/Scenes/SampleScene.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '3695f9e99961a32b0a1b99e531cc1879') in 0.0310209 seconds
